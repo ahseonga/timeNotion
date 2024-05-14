@@ -1,10 +1,11 @@
 const ageRangeBtn = document.querySelectorAll('.everyLife-btn-span button[type="button"]');
-console.log(ageRangeBtn);
+const everyLifeContent = document.querySelectorAll('.everyLife-contents');
+console.log(everyLifeContent);
 
 NodeList.prototype.filter = Array.prototype.filter;
 
-ageRangeBtn.forEach((age) => {
-  age.addEventListener('click', (e) =>{
-
-  });
-});
+for(let i = 0; i < ageRangeBtn.length; i++){
+  ageRangeBtn[i].addEventListener('click', (e) =>{
+    e.target.filter()
+  })
+}
