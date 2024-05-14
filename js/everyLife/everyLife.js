@@ -1,3 +1,4 @@
+
 const ageRangeBtn = document.querySelectorAll('.everyLife-btn-span button[type="button"]');
 const everyLifeContent = document.querySelectorAll('.everyLife-contents');
 console.log(everyLifeContent);
