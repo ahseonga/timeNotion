@@ -19,7 +19,7 @@ footer {
   display: flex;
 }
 .ft-linkbox-ul li{
-  padding: 15px 20px;
+  padding: 15px 20px 15px 0;
   font-size: 12px;
 }
 .ft-linkbox-ul li a{
