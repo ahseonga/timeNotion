@@ -82,6 +82,21 @@ footer {
     height: 50px;
     object-fit: cover;
     border: 3px solid gray;
+    transition: all 0.2s linear;
+}
+
+.detail_page1_3_3:hover {
+    transform: scale(1.2);
+}
+
+.detail_page_heart {
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+}
+
+.detail_page_heart:hover {
+    transform: scale(1.2);
 }
 
 .dot-container {
@@ -200,6 +215,22 @@ footer {
     height: 30px;
     object-fit: cover;
     border: 1px solid gray;
+    transition: all 0.2s linear;
+}
+
+.detail_page1_3_5 {
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.detail_page1_3_5:hover {
+    transform: scale(1.2);
+}
+
+.detail_page1_3_4:hover {
+    transform: scale(1.2);
 }
 
 .detail_comment_1_1 {
@@ -421,6 +452,14 @@ a {
 .detail_page1_6_1:hover {
     background-color: saddlebrown;
     transition: 0.7s;
+}
+
+.detail_dot1 {
+    padding-left: 6px;
+}
+
+.detail-comment-small {
+    font-size: 13px;
 }
 
 
