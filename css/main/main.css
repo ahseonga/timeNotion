@@ -6,6 +6,8 @@
 body {
   width: 100%;
   height: 100%;
+  background-color: #fcfaf7; /* 다 해보고 지저분해보이면 뺄 예정 */
+
 }
 #wrapper {
   display: flex;
@@ -44,13 +46,13 @@ footer {
   max-width: 1000px;
   width: 1000px;
   min-width: 1000px;
-  background-color: #fcfaf7; /* 다 해보                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       고 지저분해보이면 뺄 예정 */
+  background-color: #fcfaf7; /* 다 해보고 지저분해보이면 뺄 예정 */
   box-sizing: border-box;
   padding: 40px;
 }
 
 .bottom {
-  margin-bottom: 116px;
+  margin-bottom: 110px;
 }
 
 /* 1. 메인배너  ---------------------------------------------------------- */
@@ -95,12 +97,38 @@ img {
 
 .wrap-main-left-text {
   position: absolute;
-  bottom: 30px;
+  bottom: 38px;
   left: 20px;
   font-weight: bold;
   font-size: 20px;
   color: white;
 }
+/* 배너에 있는 프로필 */
+.wrap-main-left-profile{
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+.wrap--profile{ /* 공통 */
+  display: flex;
+  align-items: center;
+}
+
+.banner-profile-img { /* 공통 */
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.banner-profile-text { /* 공통 */
+  margin-left: 6px;
+  font-weight: 700;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white ;
+}
+
 
 /* 오른쪽 메인배너  =------*/
 .main-right-wrapper {
@@ -122,7 +150,7 @@ img {
   bottom: 30px;
   left: 20px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
 }
 
@@ -141,9 +169,53 @@ img {
   bottom: 30px;
   left: 20px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
 }
+
+
+/* 오른쪽 배너들 프로필  */
+.wrap-main-right-profile{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* 랭킹 !!!! ---- */
+
+.rank-wrap{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(71, 48, 48);
+
+}
+.rank-1st{
+  width: 30px;
+  height: 40px;
+  background-color: rgb(236, 215, 61);
+  font-weight: bold;
+}
+.rank-2st{
+  width: 25px;
+  height: 35px;
+  background-color: rgb(137, 232, 206);
+  font-size: 13px;
+  
+}
+.rank-3st{
+  width: 20px;
+  height: 30px;
+  background-color: rgb(195, 193, 254);
+  font-size: 12px;
+}
+
+
 
 /* 2. 인기 컨텐츠   ---------------------------------------------------------- */
 /* 2-1. 타이틀 */
@@ -188,7 +260,12 @@ img {
   border-radius: 6px;
   box-shadow: 2px 2px 5px 1px rgba(42, 42, 42, 0.078);
 }
-
+.wrap-pop-main:hover{
+  background-color: rgb(238, 239, 236);
+}
+.link-pop-title{
+  color: #1b0309;
+}
 .pop-title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -299,9 +376,15 @@ img {
 
 .keyword:hover {
   background-color: rgb(241, 116, 137);
+  transition: all 0.08s linear;
+  transform: scale(1.2);
+
 }
 .keyword2:hover {
   background-color: rgb(241, 116, 137);
+  transition: all 0.08s linear;
+  transform: scale(1.2);
+
 }
 
 /* 4. 하단 배너 ------------------------------------------------------------------------ */
@@ -310,22 +393,30 @@ img {
   height: 100%;
   width: 100%;
   margin-bottom: 116px;
+}
+.sub-banner-wrapper { /* 감싸는 사이즈용 */
+  display: flex;
   position: relative;
-}
-.sub-banner-wrapper {
-  width: 100%;
-  height: 180px;
-  border-radius: 6px;
   overflow: hidden;
+  width: 920px; height: 180px;  border-radius: 6px;
 }
-.sub-banner-wrapper img {
-  width: 100%;
-  height: 100%;
+.sub-banner-box{ /* ul */
+  display: flex;
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0px; left: 0px;
+  transition: left 1s ease; 
+}
+
+.sub-banner-box img {
+  width: 920px; height: 180px;
   object-fit: cover;
-  object-position: center 40%;
+  /* object-position: center 40%; */
   /* 가로 방향은 중앙, 세로 방향은 위쪽에서 20% 위치에 오도록 조정 */
 }
-/* 배너 위에 이미지  */
+
+
+/* 배너 위에 글자 */
 .sub-banner-text1 {
   position: absolute;
   top: 20px;
