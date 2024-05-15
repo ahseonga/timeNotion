@@ -416,6 +416,7 @@ hr{
 
 .list-one{
   border: 1px solid rgb(230, 216, 216);
+  border-radius: 10px;
   background-color: #fcfaf7;
   width: 284px;
   height: 300px;

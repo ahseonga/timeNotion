@@ -40,12 +40,18 @@ header {
 /* 아이디 비밀번호 입력칸 */
 .textId > input{
   margin-top: 10px;
-  margin-bottom: 13px;
+  margin-bottom: 30px;
   background-color: rgb(242, 242, 246);
   border: none;
   border-radius: 5px;
   width: 350px;
   height: 50px;
+  padding-left: 15px;
+  
+}
+
+.textId > input::placeholder{
+  color: rgb(192, 190, 187);
 }
 
 .textPassword > input{
@@ -56,9 +62,15 @@ header {
   border-radius: 5px;
   width: 350px;
   height: 50px;
+  padding-left: 15px;
+}
+
+.textPassword > input::placeholder{
+  color: rgb(192, 190, 187);
 }
 
 .password-find{
+  margin-top: 10px;
   /* background-color: aqua; */
   text-align: right;
 
@@ -84,6 +96,11 @@ header {
   border-radius: 10px;
   cursor: pointer;
   font-size: 15px;
+  font-weight: bolder;
+}
+
+.login > button:hover{
+  background-color: #1f4072;
 }
 
 .kakao-login > button{
@@ -96,6 +113,11 @@ header {
   border-radius: 10px;
   cursor: pointer;
   font-size: 15px;
+  font-weight: bolder;
+}
+
+.kakao-login > button:hover{
+  background-color: #e6d32c;
 }
 
 /* 회원가입으로 이동 */

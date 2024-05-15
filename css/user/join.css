@@ -56,11 +56,16 @@ main > p {
   border: none;
   border-radius: 5px;
   background-color: rgb(242, 242, 246);
+  padding-left: 10px;
+}
+
+.name-text  > input::placeholder{
+  color: rgb(192, 190, 187);
 }
 
 /* 아이디 */
 .id{
- margin-top: 15px;
+ margin-top: 35px;
 }
 
 .id > p{
@@ -71,11 +76,16 @@ main > p {
 
 .id-text  > input{
   margin-top: 10px;
-  width: 240px;
+  width: 230px;
   height: 40px;
   border: none;
   border-radius: 5px;
   background-color: rgb(242, 242, 246);
+  padding-left: 10px;
+}
+
+.id-text  > input::placeholder{
+  color: rgb(192, 190, 187);
 }
 
 .id-text > button{
@@ -83,13 +93,20 @@ main > p {
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(242, 242, 246);
+  background-color: #e5f2f7;
   cursor: pointer;
+  font-weight: bolder;
 }
+
+.id-text > button:hover{
+    background-color: #c6e8f6;
+    /* color: white; */
+    
+  }
 
 /* 비밀번호 */
 .password{
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .password > p{
@@ -105,6 +122,11 @@ main > p {
   border: none;
   border-radius: 5px;
   background-color: rgb(242, 242, 246);
+  padding-left: 10px;
+}
+
+.password-text  > input::placeholder{
+  color: rgb(192, 190, 187);
 }
 
 /* 생년월일 */
@@ -118,16 +140,52 @@ main > p {
 .birth-text{
   margin-top: 15px;
   display: flex;
+  align-items: center;
 }
 
-.birth-text > div > input{
+/* .birth-text > div > input{
   height: 30px;
   border: none;
   border-radius: 5px;
   margin-right: 5px;
   margin-left: 5px;
-  width: 90px;
+  width: 70px;
   background-color: rgb(242, 242, 246);
+  padding-left: 20px;
+} */
+
+.edit-birth-year::placeholder{
+  color: rgb(192, 190, 187);
+}
+
+.edit-birth-year , .edit-birth-day, .edit-birth-month{
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  /* background-color: gainsboro; */
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.edit-birth-day, .edit-birth-month{
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.edit-hr-birth{
+  width: 600px;
+  margin-bottom: 42px;
+  border: 1.2px solid rgb(148, 146, 146);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.month{
+  margin-left: 25px;
+}
+
+.day{
+  margin-left: 25px;
 }
 
 /* 밑줄 */
@@ -140,7 +198,7 @@ hr{
 /* 이용약관 */
 .agree{
   width: 100%;
-  height: 300px;
+  height: 250px;
   border: 1px solid rgb(199, 194, 194);
   border-radius: 5px;
 }
@@ -153,8 +211,16 @@ hr{
   margin-left: 7px;
 }
 
+.agree-container1 > span{
+  margin-left: 7px;
+}
+.agree-container2 > span{
+  margin-left: 7px;
+}
+
 .agree-container > p{
-  font-size: 12px;
+  padding-top: 7px;
+  font-size: 9px;
   color: rgb(186, 181, 176);
 }
 
@@ -164,9 +230,15 @@ hr{
   color: rgb(186, 181, 176);
 }
 
+.agree-container1{
+  margin-top: 10px;
+  margin-left: 40px;
+  
+}
+
 .agree-container2{
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 40px;
   
 }
 
@@ -183,11 +255,17 @@ hr{
   font-size: 15px;
 }
 
+.login > button:hover{
+  background-color: #1f4072;
+}
+
 /* 로그인으로 이동 */
 .move-login{
   margin-top: 90px;
   margin-bottom: 52px;
-  text-align: center;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
 }
 
 .move-login > span{
@@ -199,6 +277,10 @@ hr{
   margin-right: 15px;
   font-size: 15px;
   color: rgb(151, 149, 147);
+}
+
+.move-login > a > img{
+  width: 50px;
 }
 
 
