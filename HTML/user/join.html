@@ -80,13 +80,58 @@
         <p>생년월일</p>
         <div class="birth-text">
           <div>
-            <input type="text">년
+            <input class="edit-birth-year" type="text"  placeholder="ex)1999" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="4">년
           </div>
-          <div>
-            <input type="text">월
+          <div class="month">
+            <select name="month" class="edit-birth-month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>월
           </div>
-          <div>
-            <input type="text">일
+          <div class="day">
+            <select class="edit-birth-day" name="day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="12">13</option>
+              <option value="12">14</option>
+              <option value="12">15</option>
+              <option value="12">16</option>
+              <option value="12">17</option>
+              <option value="12">18</option>
+              <option value="12">19</option>
+              <option value="12">20</option>
+              <option value="12">21</option>
+              <option value="12">22</option>
+              <option value="12">23</option>
+              <option value="12">24</option>
+              <option value="12">25</option>
+              <option value="12">26</option>
+              <option value="12">27</option>
+              <option value="12">28</option>
+              <option value="12">29</option>
+              <option value="12">30</option>
+              <option value="12">31</option>
+            </select>일
           </div>
         </div>
       </div>
@@ -98,14 +143,14 @@
           <p>(전체 동의는 필수 및 선택 정보에 대한 동의가 포함되어 있습니다)</p>
         </div>
         <hr id="hr">
-        <div class="agree-container2">
+        <div class="agree-container1">
           <input type="radio" ><span>이용약관 동의 (필수)</span>
         </div>
         <div class="agree-container2">
           <input type="radio" ><span>개인정보 수집 및 이용 동의 (필수)</span>
         </div>
         <div class="agree-container2">
-          <input type="radio" ><span>이용약관 동의 (필수)</span>
+          <input type="radio" ><span>광고 수신 동의 (선택)</span>
         </div>
       </div>
       <!-- 회원가입 버튼 -->
@@ -115,7 +160,9 @@
       <!-- 로그인으로 이동 -->
       <div class="move-login">
         <span>이미 계정이 있으신가요?</span>
-        <a href="./../user/login.html">로그인 로고!!!</a>
+        <a href="./../user/login.html">
+          <img src="./../../img/user/login-logo.png" alt="">
+        </a>
       </div>
 
     </main>
