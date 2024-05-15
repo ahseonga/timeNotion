@@ -91,7 +91,7 @@
     }
     
     #detail_text {
-        width: 100%;
+        width: 98%;
         height: 500px;
     }
     
@@ -219,4 +219,8 @@
     textarea {
         resize: none;
         padding-left: 20px;
+    }
+    
+    .image-upload {
+        padding-bottom: 5px;
     }
