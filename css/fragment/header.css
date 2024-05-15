@@ -50,8 +50,9 @@ header {
 }
 .category-box li:hover {
   cursor: pointer;
-  background-color: #76adc32f;
+  /* background-color: #76adc32f; */
   border-radius: 6px;
+  transform: scale(1.2) rotate(3deg);
 }
 
 /* 헤더 오른쪽 ---------------------------------------------- */
