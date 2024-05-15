@@ -57,11 +57,11 @@
   margin-top: 10px;
 }
 
-.profile-heart img{
+/* .profile-heart img{
   width: 20px;
   height: 20px;
   margin-top: 10px;
-}
+} */
 .profile-introduce{
   width: 600px;
   /* margin-top: ; */
@@ -85,6 +85,9 @@
   background-color: #4c6791;
   border: none;
   border-radius: 10px;
+}
+.write-button > button a{
+  color : #D9E9F8;
 }
 .write-button > button:hover{
   background-color: #D9E9F8;

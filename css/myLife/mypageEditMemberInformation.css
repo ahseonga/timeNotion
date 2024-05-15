@@ -86,8 +86,8 @@
 }
 .edit-hr-img-change{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 
@@ -142,7 +142,7 @@
 }
 .edit-hr-back-img-change{
   width: 600px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 20px;
   border: 1px solid rgb(211, 210, 210);
 }
@@ -164,8 +164,8 @@
 }
 .edit-hr-id{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 
@@ -198,8 +198,8 @@
 }
 .edit-hr-password{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 
@@ -225,8 +225,8 @@
 }
 .edit-hr-password-check{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 .edit-password-check-box input::placeholder{
@@ -246,6 +246,9 @@
 .edit-nickname-form-div{
   display: flex;
   justify-content: space-between;
+}
+.edit-nickname-form-div input{
+  color: rgb(187, 186, 186);
 }
 .edit-nickname-form-div input::placeholder{
   opacity: 0.7;
@@ -279,8 +282,8 @@
 }
 .edit-hr-nickname{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 
@@ -294,6 +297,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* 숨김처리  */
+  display: none;
 }
 .edit-email-paragraph{
   font-weight: bolder ;
@@ -301,9 +306,11 @@
 }
 .edit-hr-email{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
+  /* 숨김처리 */
+  display: none;
 }
 
 
@@ -322,8 +329,8 @@
 }
 .edit-hr-phone{
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
 }
 
@@ -343,7 +350,7 @@
   height: 30px;
   border-radius: 6px;
   border: 1px solid gray;
-  background-color: gainsboro;
+  background-color: #ffff;
   margin-right: 10px;
 }
 .edit-birth-day, .edit-birth-month{
@@ -360,7 +367,10 @@
   margin-bottom: 30px;
   margin-top: 30px;
 }
-
+#edit-birth-result{
+  position: relative;
+  top: 5px;
+}
 
 
 

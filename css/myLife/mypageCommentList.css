@@ -44,12 +44,12 @@
 /* .profile-heart p{
   margin: 0;
 } */
-.profile-heart img{
+/* .profile-heart img{
   margin: 0;
   width: 20px;
   height: 20px;
   margin-top: 10px;
-}
+} */
 .follower{
   font-size: 12px;
 }
@@ -89,6 +89,9 @@
   background-color: #4c6791;
   border: none;
   border-radius: 10px;
+}
+.write-button > button a{
+  color : #D9E9F8;
 }
 .write-button > button:hover{
   background-color: #D9E9F8;
