@@ -51,11 +51,11 @@
   font-size: 18px;
 }
 
-.profile-heart img{
+/* .profile-heart img{
   width: 20px;
   height: 20px;
   margin-top: 10px;
-}
+} */
 .profile-text{
   display: flex;
   justify-content: space-between;
@@ -78,7 +78,9 @@
 .write-button{
   
 }
-
+.write-button > button a{
+  color : #D9E9F8;
+}
 .write-button > button{
   width: 90px;
   height: 35px;
