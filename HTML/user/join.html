@@ -8,6 +8,7 @@
   <title>회원가입</title>
   <link rel="stylesheet" href="./../../css/user/join.css" />
   <link rel="stylesheet" href="./../../css/reset.css" />
+  <script defer src="./../../js/user/join.js"></script>
 </head>
 
 <body>
@@ -24,32 +25,30 @@
       <p>회원가입</p>
       <!-- 이름 -->
       <div class="name">
-        <p>이름</p>
-        <div class="name-text">
-          <input type="text" placeholder="이름을 입력해주세요">
-        </div>
+        <p id="name-paragraph">이름</p>
+          <input type="text" id="name-input" placeholder="이름을 입력해주세요">
+          <p id="name-result"></p>
       </div>
       <!-- 아이디 -->
       <div class="id">
-        <p>아이디</p>
+        <p id="join-id-paragraph">아이디</p>
         <div class="id-text">
-          <input type="text" placeholder="아이디를 입력해주세요">
-          <button>중복 확인</button>
+          <input id="join-id-input" type="text" placeholder="아이디를 입력해주세요">
+          <button id="join-id-button">중복 확인</button>
         </div>
+        <p id="join-id-result"></p>
       </div>
       <!-- 비밀번호 -->
       <div class="password">
-        <p>비밀번호</p>
-        <div class="password-text">
-          <input type="text" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
-        </div>
+        <p id="join-password-paragraph">비밀번호</p>
+          <input id="join-password-input" type="password" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
+        <p id="join-password-result"></p>
       </div>
       <!-- 비밀번호 확인 -->
       <div class="password">
-        <p>비밀번호 확인</p>
-        <div class="password-text">
-          <input type="text" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
-        </div>
+        <p id="join-passwordcheck-paragraph">비밀번호 확인 </p>
+          <input id="join-passwordcheck-input" type="password" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
+        <p id="join-passwordcheck-result"></p>
       </div>
       <!-- 이메일 -->
       <div class="id">
@@ -139,23 +138,23 @@
       <!-- 이용약관 -->
       <div class="agree">
         <div class="agree-container">
-          <input type="radio" ><span>모든 약관을 전체동의 합니다.</span>
+          <input type="checkbox" id="check_all" ><span>모든 약관을 전체동의 합니다.</span>
           <p>(전체 동의는 필수 및 선택 정보에 대한 동의가 포함되어 있습니다)</p>
         </div>
         <hr id="hr">
         <div class="agree-container1">
-          <input type="radio" ><span>이용약관 동의 (필수)</span>
+          <input type="checkbox" class="check" required ><span>이용약관 동의 (필수)</span>
         </div>
         <div class="agree-container2">
-          <input type="radio" ><span>개인정보 수집 및 이용 동의 (필수)</span>
+          <input type="checkbox"  class="check" required ><span>개인정보 수집 및 이용 동의 (필수)</span>
         </div>
         <div class="agree-container2">
-          <input type="radio" ><span>광고 수신 동의 (선택)</span>
+          <input type="checkbox"  class="check"><span>광고 수신 동의 (선택)</span>
         </div>
       </div>
       <!-- 회원가입 버튼 -->
       <div class="login">
-        <button>회원가입</button>
+        <button class="join" >회원가입</button>
       </div>
       <!-- 로그인으로 이동 -->
       <div class="move-login">
