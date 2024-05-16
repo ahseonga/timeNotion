@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>detail_writing</title>
-    <link rel="stylesheet" href="./../../css/myLife/detail_writing.css" />
+    <title>detail_writingMode</title>
+    <link rel="stylesheet" href="./../../css/myLife/detail_writingMode.css" />
     <link rel="stylesheet" href="./../../css/fragment/header.css" />
     <link rel="stylesheet" href="./../../css/fragment/footer.css" />
     <link rel="stylesheet" href="./../../css/reset.css" />
+    <script defer src="./../../js/myLife/detail_writingMode.js"></script>
+
 </head>
 
 <body>
@@ -75,16 +77,16 @@
                 </div>
                 <hr>
                 <div class="detail_page3_3">
-                    <div class="image-upload">
-                        <label for="imageUpload">파일 추가 : </label>
-                        <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
-                    </div>
+                    <label for="file">
+                        <div class="btn-upload">파일 추가</div>
+                    </label>
+                    <input type="file" name="file" id="file">
                     <textarea id="detail_text" name="text" placeholder="텍스트입력"></textarea>
                 </div>
                 <hr>
                 <div class="detail_page3_4">
-                    <button type="submit" class="detail_button1"><a id="detail_button_1" href="http://127.0.0.1:5500/HTML/myLife/detail_writer.html">저장</a></button>
-                    <button type="button" class="detail_button2" onclick="window.history.back();"><a id="detail_button_2" href="http://127.0.0.1:5500/HTML/myLife/detail_writer.html">취소</a></button>
+                    <button type="submit" class="detail_button1"><a id="detail_button_1" href="./../../HTML/myLife/detail_writingMode.html">저장</a></button>
+                    <button type="button" class="detail_button2" onclick="window.history.back();"><a id="detail_button_2" href="./../../HTML/myLife/detail_writingMode.html">취소</a></button>
                 </div>
             </div>
             <div class="period">
