@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>detail_my</title>
-    <link rel="stylesheet" href="./../../css/myLife/detail_my.css">
+    <title>detail_others</title>
+    <link rel="stylesheet" href="./../../css/myLife/detail_others.css">
     <link rel="stylesheet" href="./../../css/fragment/header.css" />
     <link rel="stylesheet" href="./../../css/fragment/footer.css" />
     <link rel="stylesheet" href="./../../css/reset.css">
-    <script defer src="./../../js/myLife/detail_my.js"></script>
+    <script defer src="./../../js/myLife/detail_others.js"></script>
 </head>
 
 <body>
@@ -28,6 +28,7 @@
                             <li><a href="./../myLife/mypage.html">나의 일대기</a></li>
                             <li><a href="./../yourLife/yourLife.html">너의 일대기</a></li>
                             <li><a href="./../everyLife/everyLife.html">모두의 일대기</a></li>
+                            <li><a href="./../community/inquiry.html">커뮤니티</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,7 +60,13 @@
         <main>
             <div class="container">
                 <div class="detail_page1_1">
-                    <h2>2024.02.13</h2>
+                    <div class="detail_page1_0_1">
+                        <h2>2024.02.13</h2>
+                    </div>
+                    <div class="detail_page1_0_2">
+                        <h2 class="detail_page1_0_3"><a href="./../../HTML/myLife/detail_writingMode.html">수정</a></h2>
+                        <h2><a href="" onclick="del();">삭제</a></h2>
+                    </div>
                 </div>
                 <div class="detail_page1_2">
                     <h1>즐거운 여름날 나의 하루~</h1>
@@ -69,6 +76,7 @@
                         <img src="./../../img/myLife/sas detail1.jpg" alt="사진" class="detail_page1_3_3">
                         <h2>닉네임</h2>
                         <img src="./../../img/myLife/sas detail_heart.png" alt="하트" class="detail_page_heart" id="heartImage">
+                        <h2 class="detail_page1_open">공개</h2>
                     </div>
                     <hr>
                 </div>
@@ -83,7 +91,7 @@
                     <textarea id="detail_text2" name="text" placeholder="댓글을 입력하세요"></textarea>
                 </div>
                 <div class="detail_page1_6">
-                    <a href=""><input class="detail_page1_6_1" type='button' value='입력'></a>
+                    <a href="#"><input class="detail_page1_6_1" type='button' value='입력'></a>
                 </div>
                 <div class="detail_comment">
                     <div class="detail_comment_num">
@@ -94,9 +102,10 @@
                                 <h2 class="detail_nickname1">일기주인</h2>
                             </div>
                             <div class="detail_comment_1_2">
+                                <h2 class="detail_delete"><a href="#" onclick="del();">삭제</a></h2>
                                 <h2 class="detail_date">2023.12.24</h2>
                                 <div class="detail_dot1">
-                                    <a href="#">
+                                    <a href="">
                                         <div class="dot"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
@@ -117,10 +126,9 @@
                                     <h2 class="detail_nickname">문동주</h2>
                                 </div>
                                 <div class="detail_comment_2_3">
-                                    <h2 class="detail_delete"><a href="" onclick="del();">삭제</a></h2>
                                     <h2 class="detail_date">2023.12.24</h2>
                                     <div class="detail_dot">
-                                        <a href="#">
+                                        <a href="">
                                             <div class="dot"></div>
                                             <div class="dot"></div>
                                             <div class="dot"></div>
@@ -144,7 +152,7 @@
                                 <div class="detail_comment_3_3">
                                     <h2 class="detail_date">2023.12.24</h2>
                                     <div class="detail_dot">
-                                        <a href="">
+                                        <a href="#">
                                             <div class="dot"></div>
                                             <div class="dot"></div>
                                             <div class="dot"></div>
@@ -168,7 +176,7 @@
                                 <div class="detail_comment_4_3">
                                     <h2 class="detail_date">2023.12.24</h2>
                                     <div class="detail_dot">
-                                        <a href="">
+                                        <a href="#">
                                             <div class="dot"></div>
                                             <div class="dot"></div>
                                             <div class="dot"></div>
@@ -192,7 +200,7 @@
                                 <div class="detail_comment_5_3">
                                     <h2 class="detail_date">2023.12.24</h2>
                                     <div class="detail_dot">
-                                        <a href="">
+                                        <a href="#">
                                             <div class="dot"></div>
                                             <div class="dot"></div>
                                             <div class="dot"></div>
@@ -214,9 +222,10 @@
                                 <h2 class="detail_nickname1">일기주인</h2>
                             </div>
                             <div class="detail_comment_6_2">
+                                <h2 class="detail_delete"><a href="#" onclick="del();">삭제</a></h2>
                                 <h2 class="detail_date">2023.12.24</h2>
                                 <div class="detail_dot">
-                                    <a href="">
+                                    <a href="#">
                                         <div class="dot"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
