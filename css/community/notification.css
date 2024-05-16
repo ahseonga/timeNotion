@@ -110,6 +110,13 @@ button[type="button"]:hover{
     height: 175px;
     border-radius: 6px;
     /* border: 1px solid red; */
+    /* object; */
+    /* background-size: contain;
+    background-position: contain; */
+}
+.notification-banner img:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease;
 }
 .notification-banner-img{
     width: 900px;
@@ -132,6 +139,7 @@ button[type="button"]:hover{
 }
 .notification-prev{
     left: 23px;
+    display: none;
 }
 .notification-next{
     right: 39px;

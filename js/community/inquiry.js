@@ -49,15 +49,18 @@ const modalSubmit = document.querySelector('.inquiry-modal-btns button[type="sub
 
 // console.log(modatContent);
 // console.log(modalTitle);
-console.log(modalSubmit);
+// console.log(modalSubmit);
+
+
 
 modalSubmit.addEventListener('click', () =>{
   if(modalContent.value === "" || modalTitle.value === ""){
-    alert('제목 또는 내용 입력');
     inquiryModal.style.display = 'flex';
+    alert('제목 또는 내용 입력');
     if(modalContent.value === ""){
       modalContent.style.border = "none";
       modalContent.style.outline = "1px solid red";
+      
 
       modalContent.addEventListener('keydown', () => {
         modalContent.style.outline = "1px solid skyblue"; 
@@ -66,6 +69,7 @@ modalSubmit.addEventListener('click', () =>{
     if(modalTitle.value === ""){
       modalTitle.style.border = "none";
       modalTitle.style.outline = "1px solid red";
+      
 
       modalTitle.addEventListener('keydown', () => {
         modalTitle.style.outline = "1px solid skyblue";
@@ -80,6 +84,10 @@ modalSubmit.addEventListener('click', () =>{
       inquiryModal.style.display = 'flex';
     }
   }
+});
+
+modalContent.addEventListener('focus', () =>{
+  modalContent.style.outline = "none";
 })
 
 const inquiryPrev = document.querySelector('.inquiry-prev');
@@ -98,16 +106,17 @@ inquiryNext.addEventListener('click', () =>{
   bannerImg.forEach((img) =>{
     img.style.left = -(currentIdx * bannerWidth) + "px";
     img.style.transition = "0.5s ease";
-    checkEnd();
-  })
+  });
+  checkEnd();
 });
+
 inquiryPrev.addEventListener('click', () =>{
   currentIdx--;
   bannerImg.forEach((img) =>{
     img.style.left = -(currentIdx * bannerWidth) + "px";
     img.style.transition = "0.5s ease";
-    checkEnd();
-  })
+  });
+  checkEnd();
 });
 
 function checkEnd(){
