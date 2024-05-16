@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>detail_others</title>
-    <link rel="stylesheet" href="./../../css/myLife/detail_others.css">
+    <title>detail_my</title>
+    <link rel="stylesheet" href="./../../css/myLife/detail_my.css">
     <link rel="stylesheet" href="./../../css/fragment/header.css" />
     <link rel="stylesheet" href="./../../css/fragment/footer.css" />
     <link rel="stylesheet" href="./../../css/reset.css">
-    <script defer src="./../../js/myLife/detail_others.js"></script>
+    <script defer src="./../../js/myLife/detail_my.js"></script>
 </head>
 
 <body>
@@ -62,10 +62,10 @@
                 <div class="detail_page1_1">
                     <div class="detail_page1_0_1">
                         <h2>2024.02.13</h2>
-                    </div>
-                    <div class="detail_page1_0_2">
-                        <h2 class="detail_page1_0_3"><a href="./../../HTML/myLife/detail_writingMode.html">수정</a></h2>
-                        <h2><a href="" onclick="del();">삭제</a></h2>
+                        <div class="detail_page1_0_2">
+                            <h2 class="detail_page1_0_3"><a href="./../../HTML/myLife/detail_writingMode.html">수정</a></h2>
+                            <h2><a href="" onclick="del();">삭제</a></h2>
+                        </div>
                     </div>
                 </div>
                 <div class="detail_page1_2">
@@ -93,7 +93,6 @@
                 <div class="detail_page1_6">
                     <a href="#"><input class="detail_page1_6_1" type='button' value='입력'></a>
                 </div>
-                
                 <div class="detail_comment">
                     <div class="detail_comment_num">
                         <div class="detail_comment_1">
@@ -116,6 +115,18 @@
                         </div>
                         <div class="detail_comment_1_3">
                             <h2 class="detail-comment-small">궁금한점 댓글로 달아주세요!</h2>
+                            <div class="detail_comment_num">
+                                <!-- 기존 댓글 내용 -->
+                                <div class="detail_comment_content">
+                                    <!-- 대댓글 버튼 -->
+                                    <button class="reply-btn" onclick="toggleReplyInput(this)">답글쓰기</button>
+                                    <!-- 대댓글 입력 필드 (초기에는 숨겨짐) -->
+                                    <div class="reply-input" style="display: none;">
+                                        <textarea class="reply-textarea" placeholder="댓글을 남겨보세요"></textarea>
+                                        <button class="submit-reply-btn" onclick="submitReply(this)">완료</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr>
@@ -166,67 +177,19 @@
                             <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
                         </div>
                     </div>
-                    <hr>
-                    <div class="detail_comment_num">
-                        <div class="detail_comment_4">
-                            <div class="detail_comment_4_1">
-                                <div class="detail_comment_4_2">
-                                    <img src="./../../img/myLife/sas detail_comment4.jpg" alt="사진" class="detail_page1_3_4">
-                                    <h2 class="detail_nickname">윤담</h2>
-                                </div>
-                                <div class="detail_comment_4_3">
-                                    <h2 class="detail_date">2023.12.24</h2>
-                                    <div class="detail_dot">
-                                        <a href="#">
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                        </a>
-                                    </div>
-                                </div>
+                </div>
+                <hr>
+                <div class="detail_comment_num">
+                    <div class="detail_comment_4">
+                        <div class="detail_comment_4_1">
+                            <div class="detail_comment_4_2">
+                                <img src="./../../img/myLife/sas detail_comment4.jpg" alt="사진" class="detail_page1_3_4">
+                                <h2 class="detail_nickname">윤담</h2>
                             </div>
-                        </div>
-                        <div class="detail_comment_4_4">
-                            <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="detail_comment_num">
-                        <div class="detail_comment_5">
-                            <div class="detail_comment_5_1">
-                                <div class="detail_comment_5_2">
-                                    <img src="./../../img/myLife/sas detail_comment5.jpg" alt="사진" class="detail_page1_3_4">
-                                    <h2 class="detail_nickname">장윤근</h2>
-                                </div>
-                                <div class="detail_comment_5_3">
-                                    <h2 class="detail_date">2023.12.24</h2>
-                                    <div class="detail_dot">
-                                        <a href="#">
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail_comment_5_4">
-                            <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="detail_comment_num">
-                        <div class="detail_comment_6">
-                            <div class="detail_comment_6_1">
-                                <img src="./../../img/myLife/sas detail_comment1.jpg" alt="사진" class="detail_page1_3_4">
-                                <h2 class="detail_nickname">송아성</h2>
-                                <h2 class="detail_nickname1">일기주인</h2>
-                            </div>
-                            <div class="detail_comment_6_2">
-                                <h2 class="detail_delete"><a href="#" onclick="del();">삭제</a></h2>
+                            <div class="detail_comment_4_3">
                                 <h2 class="detail_date">2023.12.24</h2>
                                 <div class="detail_dot">
-                                    <a href="#">
+                                    <a href="">
                                         <div class="dot"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
@@ -234,17 +197,91 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail_comment_6_3">
-                            <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
+                    </div>
+                    <div class="detail_comment_4_4">
+                        <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
+                        <div class="detail_comment_num">
+                            <!-- 기존 댓글 내용 -->
+                            <div class="detail_comment_content">
+                                <!-- 대댓글 버튼 -->
+                                <button class="reply-btn" onclick="toggleReplyInput(this)">답글쓰기</button>
+                                <!-- 대댓글 입력 필드 (초기에는 숨겨짐) -->
+                                <div class="reply-input" style="display: none;">
+                                    <textarea class="reply-textarea" placeholder="댓글을 남겨보세요"></textarea>
+                                    <button class="submit-reply-btn" onclick="submitReply(this)">완료</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="detail_comment_num">
+                    <div class="detail_comment_5">
+                        <div class="detail_comment_5_1">
+                            <div class="detail_comment_5_2">
+                                <img src="./../../img/myLife/sas detail_comment5.jpg" alt="사진" class="detail_page1_3_4">
+                                <h2 class="detail_nickname">장윤근</h2>
+                            </div>
+                            <div class="detail_comment_5_3">
+                                <h2 class="detail_date">2023.12.24</h2>
+                                <div class="detail_dot">
+                                    <a href="">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_comment_5_4">
+                        <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
+                        <div class="detail_comment_num">
+                            <!-- 기존 댓글 내용 -->
+                            <div class="detail_comment_content">
+                                <!-- 대댓글 버튼 -->
+                                <button class="reply-btn" onclick="toggleReplyInput(this)">답글쓰기</button>
+                                <!-- 대댓글 입력 필드 (초기에는 숨겨짐) -->
+                                <div class="reply-input" style="display: none;">
+                                    <textarea class="reply-textarea" placeholder="댓글을 남겨보세요"></textarea>
+                                    <button class="submit-reply-btn" onclick="submitReply(this)">완료</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr>
-                    <!-- 3. 페이지네이션 -->
-                    <div class="wrapper-pagination">
-                        <div class="chevron-left"><img src="./../../img/myLife/sas detail 쉐브론.png" alt=""></div>
-                        1 2 3 4 5
-                        <div class="chevron-right"><img src="./../../img/myLife/sas detail 쉐브론.png" alt=""></div>
+                    <div class="detail_comment_6">
+                        <div class="detail_comment_6_1">
+                            <img src="./../../img/myLife/sas detail_comment1.jpg" alt="사진" class="detail_page1_3_4">
+                            <h2 class="detail_nickname">송아성</h2>
+                            <h2 class="detail_nickname1">일기주인</h2>
+                        </div>
+                        <div class="detail_comment_6_2">
+                            <h2 class="detail_date">2023.12.24</h2>
+                            <div class="detail_dot">
+                                <a href="">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="detail_comment_6_3">
+                        <h2 class="detail-comment-small">저도 가봤는데 ㅁㅁ하고 ㅁㅁ해서 저는 ㅁㅁ로 했어요</h2>
+                    </div>
+                </div>
+                <hr>
+
+
+
+                <!-- 3. 페이지네이션 -->
+                <div class="wrapper-pagination">
+                    <div class="chevron-left"><img src="./../../img/myLife/sas detail 쉐브론.png" alt=""></div>
+                    1 2 3 4 5
+                    <div class="chevron-right"><img src="./../../img/myLife/sas detail 쉐브론.png" alt=""></div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="footer-wrapper">

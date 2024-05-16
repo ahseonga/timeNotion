@@ -18,3 +18,13 @@ function changeHeartColor() {
         heartImage.classList.add('red');
     }
 }
+
+// ---- 댓글 구현 ---- //
+
+function toggleReplyInput(btn) {
+
+    var replyInput = btn.parentElement.querySelector('.reply-input');
+
+    replyInput.style.display = (replyInput.style.display === 'none') ? 'flex' : 'none';
+
+}
