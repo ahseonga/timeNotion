@@ -146,7 +146,15 @@ h5,
 h6,
 input,
 textarea,
-select {
+select,
+button,
+header,
+footer,
+span,
+main,
+a,
+select,
+option {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
