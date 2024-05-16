@@ -35,13 +35,30 @@ header {
 .profile-background{
   position: relative;
 }
-
-.profile-background > img{
+/* 수정1 : 검은거 한 겹 추가 */
+.profile-background-dark{
+  background-color: #12121230;
   width: 100%;
-  height: 165.5px;
+  height: 100%;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  top: 0px;
+}
+
+.profile-bg-img-box{
+  width: 100%;
+  height: 167px;
   border-radius: 6px 6px 0 0;
 }
 
+.profile-bg-img-box > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+
+}
+/* 수정4 : 프로필 동그라미 */
 .profile{
   position: absolute;
   top: 90px;
@@ -50,18 +67,24 @@ header {
   align-items: center;
   margin-left: 25px;  
 }
-
-.profile > img {
+.profile-img-box{
   width: 100px;
   height: 100px;
+  overflow: hidden;
+}
+.profile-img-box > img {
+  width: 100%; height: 100%;
+  object-fit: cover;
   border-radius: 50%;
   margin-right: 30px;
 }
+
 
 .profile-detail{
   display: flex;
   align-items: center;
   height: 36px;
+  margin-left: 34px;
 }
 
 .profile-detail  > p{
@@ -74,14 +97,23 @@ header {
   color: white;
   height: 100%;
 }
+/* 수정2 : 프로필 닉네임 */
+#profile-nickname{
+  font-weight: 700;
+  text-shadow: 1px 2px 5px#14141430;
+}
+.follower-number{
+  font-weight: 700;
+  text-shadow: 1px 2px 5px#14141430;
+}
 .profile-heart img{
   width: 20px;
   height: 20px;
   margin-top: 10px;
 }
-
 .follower{
   font-size: 12px;
+  text-shadow: 1px 2px 5px#14141430;
 }
 
 .follower-number{
@@ -97,17 +129,18 @@ header {
 }
 
 .profile-introduce{
-  width: 600px;
+  width: 500px;
   /* margin-top: ; */
   margin-left: 40px;
 }
 
 .profile-introduce > p{
   margin: 0;
-  line-height: 2;
+  line-height: 1.7;
+  font-size: 12px;
 }
 
-.write-button > button{
+.write-button button{
   width: 90px;
   height: 35px;
   color: white;
@@ -132,7 +165,7 @@ header {
 
 .second-container-comment{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 120px;
   border-radius: 5px;
   margin-right: 6px;
@@ -141,11 +174,7 @@ header {
   justify-content: center;
 }
 
-.second-container-comment > a{
-  font-weight: 900;
-  font-size: 13px;
-  color: black;
-}
+
 
 .second-container-comment:hover{
   cursor: pointer;
@@ -154,7 +183,7 @@ header {
 
 .second-container-like{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 100px;
   border-radius: 5px;
   margin-right: 6px;
@@ -163,10 +192,14 @@ header {
   justify-content: center;
 }
 
-.second-container-like > a{
-  font-weight: 900;
-  font-size: 13px;
-  color: black;
+/* 여기도 수정 */
+.second-container-comment > a,
+.second-container-like > a, 
+.second-container-user > a,
+.second-container-alarm > a{
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(6, 14, 49);
   
 }
 
@@ -177,7 +210,7 @@ header {
 
 .second-container-user{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 120px;
   border-radius: 5px;
   margin-right: 6px;
@@ -186,12 +219,7 @@ header {
   justify-content: center;
 }
 
-.second-container-user > a{
-  font-weight: 900;
-  font-size: 13px;
-  color: black;
-  
-}
+
 
 .second-container-user:hover{
   cursor: pointer;
@@ -200,7 +228,7 @@ header {
 
 .second-container-alarm{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 80px;
   border-radius: 5px;
   margin-right: 6px;
@@ -209,12 +237,6 @@ header {
   justify-content: center;
 }
 
-.second-container-alarm > a{
-  font-weight: 900;
-  font-size: 13px;
-  color: black;
-  
-}
 
 .second-container-alarm:hover{
   cursor: pointer;
@@ -414,13 +436,13 @@ hr{
   width: 100%;
 }
 
+/* 수정5 */
 .list-one{
-  border: 1px solid rgb(230, 216, 216);
   border-radius: 10px;
   background-color: #fcfaf7;
   width: 284px;
   height: 300px;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 2px 2px 5px 1px rgba(42, 42, 42, 0.152);
   margin-right: 20px;
   margin-bottom: 38px;
 }
@@ -461,7 +483,7 @@ hr{
 .list-text{
   margin-top: 25px;
   line-height: 1.8;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .fifth-container{
