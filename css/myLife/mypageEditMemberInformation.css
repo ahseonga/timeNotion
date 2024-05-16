@@ -8,9 +8,9 @@
   justify-content: center;
   height: 100%; /* 컨테이너의 높이를 기준으로 배치합니다. */
 }
-header {
+/* header {
   text-align: center; /* 내부 요소들을 가운데로 정렬 */
-  height: 140px;
+  /* height: 140px;
   width: 100%;
   background-color: #e5f2f7;
 }
@@ -18,7 +18,7 @@ footer {
   background-color: rgb(221, 222, 224);
   width: 100%;
   height: 335px;
-}
+} */ 
 
 /* 회원 정보 수정 */
 .edit-member-paragraph{
@@ -180,12 +180,70 @@ footer {
 }
 
 
+/* 비밀번호 변경하기  */
+.edit-password-chnage-button{
+  background-color: rgb(167, 128, 77);
+  color: rgb(243, 240, 240);
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 6px;
+  border: none;
+  height: 43px;
+  width: 195px;
+  cursor: pointer;
+}
+#edit-ori-password-paragraph{
+  margin-bottom: 30px ;
+}
+
+
+/* 현재 비밀번호 */
+.edit-ori-password-box{
+  /* background-color: lightseagreen; */
+  display: none;
+  height: 70px;
+  width: 600px;
+}
+.edit-ori-password-box p{
+  margin-bottom: 10px;
+}
+.edit-ori-password-box input{
+  border: 1px solid grey;
+  color: rgb(187, 186, 186);
+  border-radius: 6px;
+  font-size: 14px;
+  height: 43px;
+  width: 560px;
+  padding-left: 20px;
+  padding-right: 19px;
+}
+.edit-ori-password-box input::placeholder{
+  opacity: 0.7;
+}
+.edit-ori-password-box input:hover{
+  background-color: #F2F2F2;
+}
+.edit-hr-ori-password{
+  width: 600px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid rgb(211, 210, 210);
+  /* display: none; */
+}
+
+
+
+
+
+
+
 
 /* 비밀번호 */
 .edit-password-box{
   /* background-color: lightseagreen; */
   height: 70px;
   width: 600px;
+  display: none;
 }
 .edit-password-box p{
   margin-bottom: 10px;
@@ -211,6 +269,7 @@ footer {
   margin-bottom: 30px;
   margin-top: 30px;
   border: 1px solid rgb(211, 210, 210);
+  display: none;
 }
 
 
@@ -219,6 +278,7 @@ footer {
   /* background-color: lightseagreen; */
   height: 70px;
   width: 600px;
+  display: none;
 }
 .edit-password-check-box p{
   margin-bottom: 10px;
