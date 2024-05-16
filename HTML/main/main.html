@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,245 +12,243 @@
     <link rel="stylesheet" href="./../../css/reset.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="./../../js/main/main.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="wrapper">
-      <!-- 헤더~~!!!!!!!!!!!!!!!!!!! -->
-      <header>
-        <div class="header-wrapper">
-          <div class="header-left">
-            <div class="logo-box">
-              <a href="./../main/main.html"
-                ><img src="./../../img/main/timenotion.png" alt="로고 사진 넣어주세요"
-              /></a>
-            </div>
-            <div class="category-box">
-              <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="./../myLife/mypage.html">나의 일대기</a></li>
-                <li><a href="./../yourLife/yourLife.html">너의 일대기</a></li>
-                <li><a href="./../everyLife/everyLife.html">모두의 일대기</a></li>
-                <li><a href="./../community/inquiry.html">커뮤니티</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-right">
-            <!-- 로그인 전 ----------- -->
-            <div class="login-box">
-              <a href="./../user/login.html" class="login-wrap">
-                <div class="header-img-box"><img src="./../../img/main/로그인.png" alt="" /></div>
-                <span>로그인</span>
-              </a>
-            </div>
-            <div class="regist-box">
-              <a href="./../user/join.html" class="regist-wrap">
-                <div class="header-img-box"><img src="./../../img/main/회원가입.png" alt="" /></div>
-                <span>회원가입</span>
-              </a>
-            </div>
-            <!-- 로그인 후 ------------ .logout-box : display : none -->
-            <div class="logout-box">
-              <a href="#" class="logout-wrap">
-                <div class="logout-img-box"><img src="./../../img/main/로그아웃.png" alt="" /></div>
-                <span>로그아웃</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- 헤더 끝-========================================================================== -->
-
-      <main>
-        <div class="container">
-          <!-- 1. 메인배너 -->
-          <div class="main-banner-container bottom">
-            <!-- 1-1. 왼쪽 메인배너 -->
-            <div class="main-left-wrapper">
-              <a href="#">
-                <img src="./../../img/main/봉준호 (4).jpg" alt="" />
-                <div class="wrap-main-left-text">
-                  <span>제 영화 시나리오의 원천이 어디인가</span>
+        <!-- 헤더~~!!!!!!!!!!!!!!!!!!! -->
+        <header>
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <div class="logo-box">
+                        <a href="./../main/main.html"><img src="./../../img/main/timenotion.png" alt="로고 사진 넣어주세요" /></a>
+                    </div>
+                    <div class="category-box">
+                        <ul>
+                            <li><a href="#">about</a></li>
+                            <li><a href="./../myLife/mypage.html">나의 일대기</a></li>
+                            <li><a href="./../yourLife/yourLife.html">너의 일대기</a></li>
+                            <li><a href="./../everyLife/everyLife.html">모두의 일대기</a></li>
+                            <li><a href="./../community/inquiry.html">커뮤니티</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- 랭킹 -->
-                <div class="rank-wrap rank-1st"><span>1</span></div>
-                <!-- 프로필 -->
-                <div class="wrap-main-left-profile">
-                  <a href="#" class="link-main-profile wrap--profile">
-                    <div class="banner-profile-img">
-                      <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                <div class="header-right">
+                    <!-- 로그인 전 ----------- -->
+                    <div class="login-box">
+                        <a href="./../user/login.html" class="login-wrap">
+                            <div class="header-img-box"><img src="./../../img/main/로그인.png" alt="" /></div>
+                            <span>로그인</span>
+                        </a>
                     </div>
-                    <div class="banner-profile-text"><span>nickname</span></div>
-                  </a>
+                    <div class="regist-box">
+                        <a href="./../user/join.html" class="regist-wrap">
+                            <div class="header-img-box"><img src="./../../img/main/회원가입.png" alt="" /></div>
+                            <span>회원가입</span>
+                        </a>
+                    </div>
+                    <!-- 로그인 후 ------------ .logout-box : display : none -->
+                    <div class="logout-box">
+                        <a href="#" class="logout-wrap">
+                            <div class="logout-img-box"><img src="./../../img/main/로그아웃.png" alt="" /></div>
+                            <span>로그아웃</span>
+                        </a>
+                    </div>
                 </div>
-              </a>
             </div>
-            <!-- 1-1. 오른쪽 메인배너 -->
-            <div class="main-right-wrapper">
-              <div class="main-top-box">
-                <a href="#">
-                  <img src="./../../img/main/봉준호 (3).jpg" alt="" />
-                  <div class="wrap-main-top-text">
-                    <span>크기가 애매한건지 위치가 애매한건지</span>
-                  </div>
-                  <div class="rank-wrap rank-2st"><span>2</span></div>
-                  <!-- 프로필 -->
-                  <div class="wrap-main-right-profile">
-                    <a href="#" class="link-main-profile wrap--profile">
-                      <div class="banner-profile-img">
-                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
-                      </div>
-                      <div class="banner-profile-text"><span>nickname</span></div>
-                    </a>
-                  </div>
-                </a>
-              </div>
-              <div class="main-bottom-box">
-                <a href="#">
-                  <img class="transform" src="./../../img/main/봉준호 (5).jpg" alt="" />
-                  <div class="wrap-main-bottom-text"><span># 좀 더 작고 짧게</span></div>
-                  <div class="rank-wrap rank-3st"><span>3</span></div>
-                  <!-- 프로필 -->
-                  <div class="wrap-main-right-profile">
-                    <a href="#" class="link-main-profile wrap--profile">
-                      <div class="banner-profile-img">
-                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
-                      </div>
-                      <div class="banner-profile-text"><span>nickname</span></div>
-                    </a>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 2. 인기 컨텐츠 -->
-          <div class="pop-content-container">
-            <!-- 2-1. 타이틀 -->
-            <div class="title">
-              <span>인기 컨텐츠</span>
-              <a href="#"><span>더보기</span></a>
-            </div>
-            <!-- 2-2. 인기컨텐츠 컨텐츠  -->
-            <div class="pop-main-content">
-              <!-- 컨텐츠 (1) -->
-              <div class="wrap-pop-main">
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
-                  <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
-                </a>
-                <div class="pop-views">조회수 00</div>
-                <div class="pop-date">작성일 : 2024년 4월 44일</div>
-                <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
-                  <div class="pop-profile-wrap">
-                    <div class="box-profile-img">
-                      <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+        </header>
+        <!-- 헤더 끝-========================================================================== -->
+
+        <main>
+            <div class="container">
+                <!-- 1. 메인배너 -->
+                <div class="main-banner-container bottom">
+                    <!-- 1-1. 왼쪽 메인배너 -->
+                    <div class="main-left-wrapper">
+                        <a href="#">
+                            <img src="./../../img/main/봉준호 (4).jpg" alt="" />
+                            <div class="wrap-main-left-text">
+                                <span>제 영화 시나리오의 원천이 어디인가</span>
+                            </div>
+                            <!-- 랭킹 -->
+                            <div class="rank-wrap rank-1st"><span>1</span></div>
+                            <!-- 프로필 -->
+                            <div class="wrap-main-left-profile">
+                                <a href="#" class="link-main-profile wrap--profile">
+                                    <div class="banner-profile-img">
+                                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                    </div>
+                                    <div class="banner-profile-text"><span>nickname</span></div>
+                                </a>
+                            </div>
+                        </a>
                     </div>
-                    <div class="box-profile-nickname"><span>nickname</span></div>
-                  </div>
-                </a>
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
-                  <div class="pop-content">
-                    <span>
+                    <!-- 1-1. 오른쪽 메인배너 -->
+                    <div class="main-right-wrapper">
+                        <div class="main-top-box">
+                            <a href="#">
+                                <img src="./../../img/main/봉준호 (3).jpg" alt="" />
+                                <div class="wrap-main-top-text">
+                                    <span>크기가 애매한건지 위치가 애매한건지</span>
+                                </div>
+                                <div class="rank-wrap rank-2st"><span>2</span></div>
+                                <!-- 프로필 -->
+                                <div class="wrap-main-right-profile">
+                                    <a href="#" class="link-main-profile wrap--profile">
+                                        <div class="banner-profile-img">
+                                            <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                        </div>
+                                        <div class="banner-profile-text"><span>nickname</span></div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-bottom-box">
+                            <a href="#">
+                                <img class="transform" src="./../../img/main/봉준호 (5).jpg" alt="" />
+                                <div class="wrap-main-bottom-text"><span># 좀 더 작고 짧게</span></div>
+                                <div class="rank-wrap rank-3st"><span>3</span></div>
+                                <!-- 프로필 -->
+                                <div class="wrap-main-right-profile">
+                                    <a href="#" class="link-main-profile wrap--profile">
+                                        <div class="banner-profile-img">
+                                            <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                        </div>
+                                        <div class="banner-profile-text"><span>nickname</span></div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. 인기 컨텐츠 -->
+                <div class="pop-content-container">
+                    <!-- 2-1. 타이틀 -->
+                    <div class="title">
+                        <span>인기 컨텐츠</span>
+                        <a href="#"><span>더보기</span></a>
+                    </div>
+                    <!-- 2-2. 인기컨텐츠 컨텐츠  -->
+                    <div class="pop-main-content">
+                        <!-- 컨텐츠 (1) -->
+                        <div class="wrap-pop-main">
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
+                                <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
+                            </a>
+                            <div class="pop-views">조회수 00</div>
+                            <div class="pop-date">작성일 : 2024년 4월 44일</div>
+                            <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
+                                <div class="pop-profile-wrap">
+                                    <div class="box-profile-img">
+                                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                    </div>
+                                    <div class="box-profile-nickname"><span>nickname</span></div>
+                                </div>
+                            </a>
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
+                                <div class="pop-content">
+                                    <span>
                       여기서 왜 ellipsis가..,,, 오늘은 새로운 카페에서 친구들과 시간을 보냈다.
                       아늑한 분위기와 따뜻한 커피가 완벽한 조화를 이뤘다. 우리는 오랜만에 만나
                       서로의 최근 소식을 나누며 웃었다. 가끔은 이런 여유로운 시간이 필요하다고
                       느꼈다. 집에 돌아오는 길에는 하늘이 유난히 맑아 기분이 좋았다.
                     </span>
-                  </div>
-                </a>
-              </div>
+                                </div>
+                            </a>
+                        </div>
 
-              <!-- 컨텐츠 (2) -->
-              <div class="wrap-pop-main">
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
-                  <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
-                </a>
-                <div class="pop-views">조회수 00</div>
-                <div class="pop-date">작성일 : 2024년 4월 44일</div>
-                <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
-                  <div class="pop-profile-wrap">
-                    <div class="box-profile-img">
-                      <img src="./../../img/main/봉준호 (8).jpg" alt="" />
-                    </div>
-                    <div class="box-profile-nickname"><span>nickname</span></div>
-                  </div>
-                </a>
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
-                  <div class="pop-content">
-                    <span>
+                        <!-- 컨텐츠 (2) -->
+                        <div class="wrap-pop-main">
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
+                                <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
+                            </a>
+                            <div class="pop-views">조회수 00</div>
+                            <div class="pop-date">작성일 : 2024년 4월 44일</div>
+                            <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
+                                <div class="pop-profile-wrap">
+                                    <div class="box-profile-img">
+                                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                    </div>
+                                    <div class="box-profile-nickname"><span>nickname</span></div>
+                                </div>
+                            </a>
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
+                                <div class="pop-content">
+                                    <span>
                       여기서 왜 ellipsis가..,,, 오늘은 새로운 카페에서 친구들과 시간을 보냈다.
                       아늑한 분위기와 따뜻한 커피가 완벽한 조화를 이뤘다. 우리는 오랜만에 만나
                       서로의 최근 소식을 나누며 웃었다. 가끔은 이런 여유로운 시간이 필요하다고
                       느꼈다. 집에 돌아오는 길에는 하늘이 유난히 맑아 기분이 좋았다.
                     </span>
-                  </div>
-                </a>
-              </div>
+                                </div>
+                            </a>
+                        </div>
 
-              <!-- 컨텐츠 (3) -->
-               <div class="wrap-pop-main">
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
-                  <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
-                </a>
-                <div class="pop-views">조회수 00</div>
-                <div class="pop-date">작성일 : 2024년 4월 44일</div>
-                <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
-                  <div class="pop-profile-wrap">
-                    <div class="box-profile-img">
-                      <img src="./../../img/main/봉준호 (8).jpg" alt="" />
-                    </div>
-                    <div class="box-profile-nickname"><span>nickname</span></div>
-                  </div>
-                </a>
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
-                  <div class="pop-content">
-                    <span>
+                        <!-- 컨텐츠 (3) -->
+                        <div class="wrap-pop-main">
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
+                                <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
+                            </a>
+                            <div class="pop-views">조회수 00</div>
+                            <div class="pop-date">작성일 : 2024년 4월 44일</div>
+                            <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
+                                <div class="pop-profile-wrap">
+                                    <div class="box-profile-img">
+                                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                    </div>
+                                    <div class="box-profile-nickname"><span>nickname</span></div>
+                                </div>
+                            </a>
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
+                                <div class="pop-content">
+                                    <span>
                       여기서 왜 ellipsis가..,,, 오늘은 새로운 카페에서 친구들과 시간을 보냈다.
                       아늑한 분위기와 따뜻한 커피가 완벽한 조화를 이뤘다. 우리는 오랜만에 만나
                       서로의 최근 소식을 나누며 웃었다. 가끔은 이런 여유로운 시간이 필요하다고
                       느꼈다. 집에 돌아오는 길에는 하늘이 유난히 맑아 기분이 좋았다.
                     </span>
-                  </div>
-                </a>
-              </div>
+                                </div>
+                            </a>
+                        </div>
 
-              <!-- 컨텐츠 (4) -->
-              <div class="wrap-pop-main">
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
-                  <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
-                </a>
-                <div class="pop-views">조회수 00</div>
-                <div class="pop-date">작성일 : 2024년 4월 44일</div>
-                <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
-                  <div class="pop-profile-wrap">
-                    <div class="box-profile-img">
-                      <img src="./../../img/main/봉준호 (8).jpg" alt="" />
-                    </div>
-                    <div class="box-profile-nickname"><span>nickname</span></div>
-                  </div>
-                </a>
-                <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
-                  <div class="pop-content">
-                    <span>
+                        <!-- 컨텐츠 (4) -->
+                        <div class="wrap-pop-main">
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-title">
+                                <div class="pop-title"><span>글자글자글자길게길게길게길게</span></div>
+                            </a>
+                            <div class="pop-views">조회수 00</div>
+                            <div class="pop-date">작성일 : 2024년 4월 44일</div>
+                            <a href="./../../HTML/myLife/userpage.html" class="link-pop-profile">
+                                <div class="pop-profile-wrap">
+                                    <div class="box-profile-img">
+                                        <img src="./../../img/main/봉준호 (8).jpg" alt="" />
+                                    </div>
+                                    <div class="box-profile-nickname"><span>nickname</span></div>
+                                </div>
+                            </a>
+                            <a href="./../../HTML/myLife/detail_others.html" class="link-pop-content">
+                                <div class="pop-content">
+                                    <span>
                       여기서 왜 ellipsis가..,,, 오늘은 새로운 카페에서 친구들과 시간을 보냈다.
                       아늑한 분위기와 따뜻한 커피가 완벽한 조화를 이뤘다. 우리는 오랜만에 만나
                       서로의 최근 소식을 나누며 웃었다. 가끔은 이런 여유로운 시간이 필요하다고
                       느꼈다. 집에 돌아오는 길에는 하늘이 유난히 맑아 기분이 좋았다.
                     </span>
-                  </div>
-                </a>
-              </div>
+                                </div>
+                            </a>
+                        </div>
 
-              <!-- -- -->
-            </div>
-          </div>
+                        <!-- -- -->
+                    </div>
+                </div>
 
-          <!-- 3. 인기 키워드-->
-          <div class="keyword-container">
-            <!-- 3-1. 왼쪽 -->
-            <div class="keyword-left">
-              <div class="title2">
-                <span>인기 키워드</span>
-                <span
-                  >타임노션에서 추천하는 키워드<br />
+                <!-- 3. 인기 키워드-->
+                <div class="keyword-container">
+                    <!-- 3-1. 왼쪽 -->
+                    <div class="keyword-left">
+                        <div class="title2">
+                            <span>인기 키워드</span>
+                            <span>타임노션에서 추천하는 키워드<br />
                   나와 같은 직업, 나이, 관심사 등을<br />
                   모두의 일대기에서 검색해보세요!</span
                 >
@@ -325,17 +324,22 @@
               <div class="ft-call-time">운영시간 : 월~금 09:00 ~ 18:00, 주말 휴무</div>
               <div class="title-sns">Company SNS</div>
               <div class="box-sns">
-                <a href="#"><div class="sns"><span>instagram</span></div></a>
-                <a href="#"><div class="sns"><span>facebook</span></div></a>
-                <a href="#"><div class="sns"><span>kakao</span></div></a>
-              </div>
+                <a href="#"><div class="sns"><span>instagram</span></div>
+                        </a>
+                        <a href="#">
+                            <div class="sns"><span>facebook</span></div>
+                        </a>
+                        <a href="#">
+                            <div class="sns"><span>kakao</span></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 오른쪽 -->
+                <div class="ft-info-right"></div>
             </div>
-            <!-- 오른쪽 -->
-            <div class="ft-info-right"></div>
-          </div>
-        </div>
-      </footer>
     </div>
-  </body>
+    </footer>
+    </div>
+</body>
 
 </html>
