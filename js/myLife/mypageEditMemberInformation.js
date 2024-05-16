@@ -7,6 +7,7 @@ function rgb(r, g, b) {
 
 
 // 이미지 변경 테스트중 화난다 아아..아아..아아ㅏ..==============================
+//일단 두기 
 
 document.addEventListener("DOMContentLoaded", function() {
   // 이미지 변경 버튼 요소를 가져옵니다.
@@ -30,148 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 console.log(profileImage);
   // 파일 선택 input에 change 이벤트를 추가하여 이미지를 변경합니다.
-  // fileInput.addEventListener('change', function(e) {
-  //     let file = e.target.files[0];
-  //     if (file) {
-  //         let reader = new FileReader();
-  //         reader.readAsDataURL(file);
-  //         console.log(reader.result);
-  //         reader.onload = function() {
-  //             profileImage.src = reader.result;
-  //         }
-  //     }
-  // });
+  fileInput.addEventListener('change', function(e) {
+      let file = e.target.files[0];
+      if (file) {
+          let reader = new FileReader();
+          reader.readAsDataURL(file);
+          console.log(reader.result);
+          reader.onload = function() {
+              profileImage.src = reader.result;
+          }
+      }
+      console.log(profileImage);
+  });
 });
 
 //나중에 보자 이미지 변경============================================
 
-
-
-
-
-
-
-
-
-
-
-//비밀번호
-
-const editPasswordInput = document.getElementById('edit-password-input');
-const editPasswordResult = document.getElementById('edit-password-result');
-const editPasswordParagraph = document.getElementById('edit-password-paragraph');
-
-// 변수생성
-let editPasswordCount = 0 ;
-//패스워드박스 focus blur 처리 
-editPasswordInput.addEventListener('focus', editPasswordInputFocusFunction);
-editPasswordInput.addEventListener('blur',editPasswordInputBlurFunction);
-
-//패스워드 박스 함수 처리 
-function editPasswordInputFocusFunction(){
-  if(editPasswordCount ===0 ){
-    editPasswordInput.style.outline = "none";
-    editPasswordInput.style.opacity = 0.7;
-    editPasswordInput.style.borderWidth = "3px";
-    editPasswordInput.style.borderColor = '#B2E8F7';
-  }else{
-    editPasswordInput.style.outline = "none";
-    editPasswordInput.style.borderWidth = "3px";
-    editPasswordInput.style.borderColor = "#FEB7B1";
-    editPasswordInput.style.borderWidth = "3px";
-  }
-  if(this.value !== ''){
-    editPasswordInput.style.outline = "none";
-    editPasswordInput.style.opacity = 0.7;
-    editPasswordInput.style.borderWidth = "3px";
-    editPasswordInput.style.borderColor = '#B2E8F7';
-  }
-  editPasswordCount++;
-}
-
-function editPasswordInputBlurFunction(){
- 
-  editPasswordResult.innerText = "필수 입력 항목입니다.";
-  editPasswordResult.style.color = rgb(255, 119, 119);
-  editPasswordResult.style.fontSize = "12px";
-  editPasswordInput.style.borderColor =  rgb(255, 119, 119);
-  editPasswordInput.style.borderWidth = "1px";
-  editPasswordInput.style.marginBottom = "5px";
-  editPasswordParagraph.style.color =  rgb(255, 119, 119);
-  if(this.value !== ''){
-    editPasswordInput.style.opacity = 0.7;
-    editPasswordInput.style.borderWidth = "1px";
-    editPasswordInput.style.borderColor = 'gray';
-    editPasswordParagraph.style.color =  'black';
-    editPasswordResult.innerText = " ";
-
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-//비밀번호 확인 
-
-
-const editPasswordCheckInput = document.getElementById('edit-password-check-input');
-const editPasswordCheckResult = document.getElementById('edit-password-check-result');
-const editPasswordCheckParagraph = document.getElementById('edit-password-check-paragraph');
-
-// 변수생성
-let editPasswordCheckCount = 0 ;
-//패스워드박스 focus blur 처리 
-editPasswordCheckInput.addEventListener('focus', editPasswordCheckInputFocusFunction);
-editPasswordCheckInput.addEventListener('blur',editPasswordCheckInputBlurFunction);
-
-//패스워드 박스 함수 처리 
-function editPasswordCheckInputFocusFunction(){
-  if(editPasswordCheckCount ===0 ){
-    editPasswordCheckInput.style.outline = "none";
-    editPasswordCheckInput.style.borderWidth = "3px";
-    editPasswordCheckInput.style.borderColor = '#B2E8F7';
-    editPasswordCheckInput.style.opacity = 0.7;
-  }else{
-    editPasswordCheckInput.style.outline = "none";
-    editPasswordCheckInput.style.borderWidth = "3px";
-    editPasswordCheckInput.style.borderColor = "#FEB7B1";
-    editPasswordCheckInput.style.borderWidth = "3px";
-  }
-  if(this.value !== ''){
-    editPasswordCheckInput.style.outline = "none";
-    editPasswordCheckInput.style.opacity = 0.7;
-    editPasswordCheckInput.style.borderWidth = "3px";
-    editPasswordCheckInput.style.borderColor = '#B2E8F7';
-  }
-  editPasswordCheckCount++;
-}
-
-function editPasswordCheckInputBlurFunction(){
- 
-  editPasswordCheckResult.innerText = "확인을 위해 비밀번호를 한 번 더 입력해주세요..";
-  editPasswordCheckResult.style.color = rgb(255, 119, 119);
-  editPasswordCheckResult.style.fontSize = "12px";
-  editPasswordCheckInput.style.borderColor =  rgb(255, 119, 119);
-  editPasswordCheckInput.style.borderWidth = "1px";
-  editPasswordCheckInput.style.marginBottom = "5px";
-  editPasswordCheckParagraph.style.color =  rgb(255, 119, 119);
-  if(this.value !== ''){
-    editPasswordCheckInput.style.opacity = 0.7;
-    editPasswordCheckInput.style.borderWidth = "1px";
-    editPasswordCheckInput.style.borderColor = 'gray';
-    editPasswordCheckParagraph.style.color =  'black';
-    editPasswordCheckResult.innerText = " ";
-
-  }
-
-}
 
 
 
@@ -194,6 +69,7 @@ let editNicknameCount = 0 ;
 //패스워드박스 focus blur 처리 
 editNicknameInput.addEventListener('focus', editNicknameInputFocusFunction);
 editNicknameInput.addEventListener('blur',editNicknameInputBlurFunction);
+editNicknameInput.addEventListener('keydown',editNicknameInputKeydownFunction);
 
 //패스워드 박스 함수 처리 
 function editNicknameInputFocusFunction(){
@@ -236,6 +112,18 @@ function editNicknameInputBlurFunction(){
   }
 
 }
+
+function editNicknameInputKeydownFunction(){
+  editNicknameInput.style.outline = "none";
+  editNicknameInput.style.opacity = 0.7;
+  editNicknameInput.style.borderWidth = "3px";
+  editNicknameInput.style.borderColor = '#B2E8F7';
+  editNicknameResult.innerText = "";
+  editNicknameParagraph.style.color =  'black';
+}
+
+
+
 
 // HTMLCollection을 배열로 변환하여 forEach를 사용하여 각 요소에 이벤트 리스너를 추가합니다.
 Array.from(editNicknameDuplication).forEach(button => {
@@ -310,36 +198,7 @@ for (let i = 0; i < editSaveButton.length; i++) {
 
 //버튼을 클릭했을때 값이 입력되지않으면 빨간 표시가 뜨게 설정
 function editSaveButtonClickFunction(){
-  //비밀번호
-  if(editPasswordInput.value ===''){
-    console.log("값이 안들어있음");
-    editPasswordResult.innerText = "필수 입력 항목입니다.";
-    editPasswordResult.style.color = rgb(255, 119, 119);
-    editPasswordResult.style.fontSize = "12px";
-    editPasswordInput.style.borderColor =  rgb(255, 119, 119);
-    editPasswordInput.style.borderWidth = "1px";
-    editPasswordInput.style.marginBottom = "5px";
-    editPasswordParagraph.style.color =  rgb(255, 119, 119);
-  }
-  //비밀번호 확인 
-  if(editPasswordCheckInput.value === ''){
-    editPasswordCheckResult.innerText = "확인을 위해 비밀번호를 한 번 더 입력해주세요..";
-    editPasswordCheckResult.style.color = rgb(255, 119, 119);
-    editPasswordCheckResult.style.fontSize = "12px";
-    editPasswordCheckInput.style.borderColor =  rgb(255, 119, 119);
-    editPasswordCheckInput.style.borderWidth = "1px";
-    editPasswordCheckInput.style.marginBottom = "5px";
-    editPasswordCheckParagraph.style.color =  rgb(255, 119, 119);
-  }
-  if(editPasswordCheckInput.value !== editPasswordInput.value){
-    editPasswordCheckResult.innerText = "비밀번호와 일치하지 않습니다.";
-    editPasswordCheckResult.style.color = rgb(255, 119, 119);
-    editPasswordCheckResult.style.fontSize = "12px";
-    editPasswordCheckInput.style.borderColor =  rgb(255, 119, 119);
-    editPasswordCheckInput.style.borderWidth = "1px";
-    editPasswordCheckInput.style.marginBottom = "5px";
-    editPasswordCheckParagraph.style.color =  rgb(255, 119, 119);
-  }
+
   //닉네임
   if(editNicknameInput.value === ''){
     editNicknameResult.innerText = "필수 입력 항목입니다.";
