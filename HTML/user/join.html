@@ -8,21 +8,27 @@
   <title>회원가입</title>
   <link rel="stylesheet" href="./../../css/user/join.css" />
   <link rel="stylesheet" href="./../../css/reset.css" />
+  <link rel="stylesheet" href="./../../css/notion.css">
   <script defer src="./../../js/user/join.js"></script>
+  <script defer src="./../../js/fragment/headerFetch.js"></script>
+  <script defer src="./../../js/fragment/footerFetch.js"></script>
 </head>
 
 <body>
 
 
 
-
+  
   <!-- 전체 감싸기 -->
   <div id="wrapper">
+    <header></header>
+   
     <!--==================== header ============== -->
-    <header>header</header>
+   
     <!-- ==========main -->
-    <main>
-      <p>회원가입</p>
+    <main> <div class="join-real-container">
+      <div class="join-banner">
+      <p id="join-banner-p">회원가입</p>
       <!-- 이름 -->
       <div class="name">
         <p id="name-paragraph">이름</p>
@@ -231,19 +237,15 @@
           <img src="./../../img/user/login-logo.png" alt="">
         </a>
       </div>
-
+      </div>
+ </div>
     </main>
-
-    <footer>footer</footer>
+ 
   </div>
-
-
-
-
-
-
+  <footer></footer>
 
 
 </body>
+
 
 </html>
