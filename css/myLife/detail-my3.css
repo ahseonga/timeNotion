@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* #cadb36  #594096 #1c191a*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    /* 내부 요소들을 가운데로 정렬 */
+    height: 140px;
+    width: 100%;
+    background-color: #e5f2f7;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(221, 222, 224);
+    width: 100%;
+    height: 335px;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* 노란 영역 부분 = 컨테이너  */
+
+.container {
+    max-width: 1000px;
+    width: 1000px;
+    background-color: #fcfaf7;
+    /* 다 해보고 지저분해보이면 뺄 예정 */
+    /* height: 1200px; 임의로 준 것, 실제론 지우세요  */
+    box-sizing: border-box;
+    padding: 40px;
+    min-width: 1000px;
+}
+
+
+/* 컨텐츠영역 보느라 넣어둔것 지우고 알아서 쓰세욤 */
+
+
+/* 배너 부분은 윤근님한테 받을 div 박스  */
+
+
+/*1. 상단 날짜 / 수정 삭제 버튼 ----------------------*/
+
+.wrapper-date-etc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.box-date-right button {
+    background-color: transparent;
+    border: none;
+}
+
+
+/*2. 타이틀 ----------------------*/
+
+.wrapper-title {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.wrapper-title h3 {
+    margin-left: 10px;
+}
+
+
+/*3. 프로필 영역 / 하트 / 공개 ----------------------*/
+
+.wrapper-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.box-profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-profile-nickname {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.box-profile-heart {
+    margin-right: 10px;
+}
+
+.box-profile-view {
+    font-size: 12px;
+}
+
+.box-profile-heart.red {
+    filter: brightness(100%) saturate(100%) invert(55%) sepia(96%) saturate(3286%) hue-rotate(336deg) brightness(103%) contrast(92%);
+}
+
+.box-profile-heart {
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.box-profile-heart:hover {
+    transform: scale(1.2);
+}
+
+
+/*4. 컨텐츠 영역 ----------------------*/
+
+.wrapper-content textarea {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    background-color: rgb(224, 224, 224);
+    border-radius: 6px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/*5. 댓글영역 ----------------------*/
+
+.wrapper-reply {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-main-reply {
+    width: 100%;
+}
+
+
+/* ---------------------- */
+
+
+/* 1. 위 */
+
+.box-main-reply-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+
+/* 위 왼쪽 */
+
+.reply-top-left {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.box-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.box-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nickname {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 65px;
+    height: 23px;
+    border: 1px solid lightseagreen;
+    font-size: 13px;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+
+/* 위 오른쪽 */
+
+.reply-top-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.delete-btn {
+    margin-right: 8px;
+}
+
+.delete-btn button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+
+/* 2. 아래 */
+
+.box-main-reply-bottom {
+    padding: 10px 0px;
+}
+
+.box-main-reply-bottom p {
+    margin-left: 35px;
+}
+
+
+/* 3. 댓글 내용 */
+
+.reply-content {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* 대댓글 -------------------------------------------------*/
+
+
+/*   */
+
+.wrapper-re-comment {
+    margin: 10px auto;
+}
+
+
+/*   */
+
+.box-re-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 대댓글 버튼  */
+
+.reply-btn {
+    border-radius: 6px;
+    border: none;
+    color: #979797;
+    cursor: pointer;
+    font-weight: bold;
+    width: 60px;
+    height: 25px;
+    font-size: 11px;
+}
+
+
+/* 대댓글 입력 필드 (초기에는 숨겨짐)  */
+
+.re-textarea {
+    width: 91%;
+    height: 43px;
+    color: gray;
+    margin-top: 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.re-submit-btn {
+    border-radius: 6px;
+    border: none;
+    color: #515050;
+    cursor: pointer;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+}

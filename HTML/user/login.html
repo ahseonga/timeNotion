@@ -7,6 +7,7 @@
   <title>로그인</title>
   <link rel="stylesheet" href="./../../css/user/login.css">
   <link rel="stylesheet" href="./../../css/reset.css">
+  <script defer src="./../../js/user/login.js"></script>
 </head>
 
 <body>
@@ -20,16 +21,16 @@
     <!-- 로그인 제외하고 감싸기 -->
     <div>
       <!-- ======================id,pw============== -->
-      <div class="id">
-        아이디
-        <div class="textId">
-          <input type="text" placeholder="아이디를 입력해주세요">
-        </div>
+      <div class="textId">
+        <p id="login-id-paragraph">아이디</p>
+          <input id="login-id-input" type="input" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
+        <p id="login-id-result"></p>
       </div>
       <div>
-        비밀번호
         <div class="textPassword">
-          <input type="password" placeholder="비밀번호를 입력해주세요">
+          <p id="login-password-paragraph">비밀번호</p>
+            <input id="login-password-input" type="password" placeholder="영문,숫자포함 8자 이상으로 입력해주세요">
+          <p id="login-password-result"></p>
         </div>
       </div>
       <!-- ============비밀번호 찾기============== -->
