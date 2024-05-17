@@ -20,36 +20,38 @@ body {
 }
 
 header {
-  text-align: center; /* 내부 요소들을 가운데로 정렬 */
+  text-align: center;
+  /* 내부 요소들을 가운데로 정렬 */
   height: 140px;
   width: 100%;
   background-color: #e5f2f7;
 }
 
 /* main */
-main{
+main {
   width: 350px;
   /* background-color: aqua; */
 }
 
-main > p {
+main>p {
   margin-top: 100px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
+
 /* 이름 */
-.name{
+.name {
   margin-top: 80px
 }
 
-.name > p{
+.name>p {
   font-weight: 500;
   font-size: 16px;
   color: rgb(73, 72, 71);
 }
 
-#name-input{
+#name-input {
   border: 1px solid grey;
   margin-top: 10px;
   width: 96%;
@@ -60,22 +62,22 @@ main > p {
   padding-left: 10px;
 }
 
-#name-inputinput::placeholder{
+#name-inputinput::placeholder {
   color: rgb(192, 190, 187);
 }
 
 /* 아이디 */
-.id{
- margin-top: 35px;
+.id {
+  margin-top: 35px;
 }
 
-.id > p{
+.id>p {
   font-weight: 500;
   font-size: 16px;
   color: rgb(73, 72, 71);
 }
 
-.id-text{
+.id-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +86,7 @@ main > p {
   margin-bottom: 5px;
 }
 
-#join-id-input{
+#join-id-input {
   border: 1px solid grey;
   width: 231px;
   height: 40px;
@@ -94,11 +96,11 @@ main > p {
   padding-left: 10px;
 }
 
-#join-id-input::placeholder{
+#join-id-input::placeholder {
   color: rgb(192, 190, 187);
 }
 
-.id-text > button{
+.id-text>button {
   width: 105px;
   height: 41.6px;
   border: none;
@@ -108,24 +110,24 @@ main > p {
   font-weight: bolder;
 }
 
-.id-text > button:hover{
-    background-color: #c6e8f6;
-    /* color: white; */
-    
-  }
+.id-text>button:hover {
+  background-color: #c6e8f6;
+  /* color: white; */
+
+}
 
 /* 비밀번호 */
-.password{
+.password {
   margin-top: 35px;
 }
 
-.password > p{
+.password>p {
   font-weight: 500;
   font-size: 16px;
   color: rgb(73, 72, 71);
 }
 
-#join-password-input{
+#join-password-input {
   border: 1px solid grey;
   margin-top: 10px;
   width: 96%;
@@ -136,11 +138,11 @@ main > p {
   padding-left: 10px;
 }
 
-#join-password-input::placeholder{
+#join-password-input::placeholder {
   color: rgb(192, 190, 187);
 }
 
-#join-passwordcheck-input{
+#join-passwordcheck-input {
   border: 1px solid grey;
   margin-top: 10px;
   width: 96%;
@@ -151,127 +153,215 @@ main > p {
   padding-left: 10px;
 }
 
-#join-passwordcheck-input::placeholder{
+#join-passwordcheck-input::placeholder {
   color: rgb(192, 190, 187);
+}
+
+/* 이메일 */
+.email {
+  margin-top: 35px;
+}
+
+.email>p {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(73, 72, 71);
+}
+
+.email-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#email-input {
+  border: 1px solid grey;
+  width: 231px;
+  height: 40px;
+  /* border: none; */
+  border-radius: 5px;
+  background-color: rgb(242, 242, 246);
+  padding-left: 10px;
+}
+
+#email-input::placeholder {
+  color: rgb(192, 190, 187);
+}
+
+.email-text>button {
+  width: 105px;
+  height: 41.6px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5f2f7;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.email-text>button:hover {
+  background-color: #c6e8f6;
+  /* color: white; */
+
+}
+
+/* 닉네임 */
+.nickname {
+  margin-top: 35px;
+}
+
+.nickname>p {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(73, 72, 71);
+}
+
+.nickname-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#join-nickname-input {
+  border: 1px solid grey;
+  width: 231px;
+  height: 40px;
+  /* border: none; */
+  border-radius: 5px;
+  background-color: rgb(242, 242, 246);
+  padding-left: 10px;
+  
+}
+
+#nickname-email-input::placeholder {
+  color: rgb(192, 190, 187);
+}
+
+.nickname-text>button {
+  width: 105px;
+  height: 41.6px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e5f2f7;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.nickname-text>button:hover {
+  background-color: #c6e8f6;
+  /* color: white; */
+
 }
 
 /* 생년월일 */
-.birth > p{
-  margin-top: 15px;
-  font-weight: 500;
-  font-size: 16px;
-  color: rgb(73, 72, 71);
-}
-
-.birth-text{
-  margin-top: 15px;
+.edit-birth-box{
+  margin-top: 35px;
+  /* background-color: lightseagreen; */
+  height: 70px;
+  width: 600px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-/* .birth-text > div > input{
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-  width: 70px;
-  background-color: rgb(242, 242, 246);
-  padding-left: 20px;
-} */
-
-.edit-birth-year::placeholder{
-  color: rgb(192, 190, 187);
-}
-
 .edit-birth-year , .edit-birth-day, .edit-birth-month{
-  width: 60px;
+  width: 70px;
   height: 30px;
   border-radius: 6px;
   border: 1px solid gray;
-  /* background-color: gainsboro; */
+  background-color: #ffff;
   margin-right: 10px;
-  padding-left: 10px;
 }
 .edit-birth-day, .edit-birth-month{
   margin-left: 10px;
   padding-left: 20px;
 }
-
+.edit-birth-year{
+  padding-left: 40px;
+}
 .edit-hr-birth{
-  width: 600px;
+  width: 100%;
   margin-bottom: 42px;
   border: 1.2px solid rgb(148, 146, 146);
   margin-bottom: 30px;
   margin-top: 30px;
 }
-
-.month{
-  margin-left: 25px;
+#edit-birth-result{
+  position: relative;
+  top: 5px;
 }
 
-.day{
-  margin-left: 25px;
+.edit-birth-year::placeholder {
+  color: rgb(192, 190, 187);
 }
 
-/* 밑줄 */
-hr{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  /* font-weight: 100; */
-}
 
 /* 이용약관 */
 
 
-.agree{
+.agree {
   width: 100%;
   height: 250px;
   border: 1px solid rgb(199, 194, 194);
   border-radius: 5px;
 }
 
-.agree-container{
+.agree-container {
   margin: 30px;
 }
 
-.agree-container > span{
+.agree-container>span {
   margin-left: 7px;
 }
 
-.agree-container1 > span{
-  margin-left: 7px;
-}
-.agree-container2 > span{
+.agree-container1>span {
   margin-left: 7px;
 }
 
-.agree-container > p{
+.agree-container2>span {
+  margin-left: 7px;
+}
+
+.agree-container>p {
   padding-top: 7px;
   font-size: 9px;
   color: rgb(186, 181, 176);
 }
 
-#hr{
+#hr {
   width: 290px;
   margin: 0 auto;
   color: rgb(186, 181, 176);
 }
 
-.agree-container1{
+.agree-container1 {
   margin-top: 10px;
   margin-left: 40px;
-  
+
 }
 
-.agree-container2{
+.agree-container2 {
   margin-top: 30px;
   margin-left: 40px;
-  
+
+}
+
+.required-message{
+  margin-top: 3px;
+  margin-left: 40px;
+}
+
+.required-message2{
+  margin-top: 3px;
+  margin-left: 40px;
 }
 
 /* 회원가입 버튼 */
-.login > button{
+.login>button {
   margin-top: 40px;
   width: 350px;
   height: 50px;
@@ -283,31 +373,32 @@ hr{
   font-size: 15px;
 }
 
-.login > button:hover{
+.login>button:hover {
   background-color: #1f4072;
 }
 
 /* 로그인으로 이동 */
-.move-login{
+.move-login {
   margin-top: 90px;
   margin-bottom: 52px;
   display: flex;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
 }
 
-.move-login > span{
-  margin-right: 15px;
-  font-size: 15px;
-  color: rgb(151, 149, 147);
-}
-.move-login > a{
+.move-login>span {
   margin-right: 15px;
   font-size: 15px;
   color: rgb(151, 149, 147);
 }
 
-.move-login > a > img{
+.move-login>a {
+  margin-right: 15px;
+  font-size: 15px;
+  color: rgb(151, 149, 147);
+}
+
+.move-login>a>img {
   width: 50px;
 }
 
@@ -338,6 +429,7 @@ footer {
   padding: 40px;
   min-width: 1000px;
 }
+
 /* 컨텐츠영역 보느라 넣어둔것 지우고 알아서 쓰세욤 */
 
 /* 배너 부분은 윤근님한테 받을 div 박스  */

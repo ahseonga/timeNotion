@@ -32,6 +32,16 @@ header {
   background-color: #e5f2f7;
 }
 
+/* 수정1 : 검은거 한 겹 추가 */
+.profile-background-dark{
+  background-color: #12121230;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  top: 0px;
+}
+
 .profile-background{
   position: relative;
   /* background-color:aqua;  */
@@ -39,7 +49,7 @@ header {
 }
 /* 수정1 : 검은거 한 겹 추가 */
 .profile-background-dark{
-  background-color: #12121230;
+  /* background-color: #12121230; */
   width: 100%;
   height: 100%;
   border-radius: 6px 6px 0 0;
@@ -100,10 +110,27 @@ header {
   color: white;
   height: 100%;
 }
-.profile-heart img{
+/* .profile-heart img{
   width: 20px;
   height: 20px;
   margin-top: 10px;
+} */
+
+/* 빨간색 하트 이미지 스타일 */
+
+.detail_page_heart.red {
+  filter: brightness(100%) saturate(100%) invert(55%) sepia(96%) saturate(3286%) hue-rotate(336deg) brightness(103%) contrast(92%);
+}
+.detail_page_heart {
+  width: 25px;
+  height: 25px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.detail_page_heart:hover {
+  transform: scale(1.2);
 }
 
 /* 수정2 : 프로필 닉네임 */
@@ -128,6 +155,20 @@ header {
   align-items: top;
   margin-left: 120px;
   margin-top: 10px;
+}
+.profile-introduce p{
+  font-size: 16px;
+  /* font-weight: bold; */
+
+  width: 600px; /* 원하는 너비로 설정 */
+  height: 64px; /* 두 줄 높이에 맞춰 설정 */
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 원하는 줄 수 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 32px; /* 한 줄 높이 설정 */
 }
 
 .profile-introduce{
@@ -368,6 +409,12 @@ hr{
 .title > h3{
   font-size: 17px;
   font-weight: bold;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 192px; /* 원하는 너비로 설정 */
+
 }
 
 .title > p{
@@ -384,6 +431,19 @@ hr{
   margin-top: 25px;
   line-height: 1.8;
   font-size: 13px;
+}
+
+.list-text p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  width: 236px;  
+  height: 140px;
+  /* 원하는 너비로 설정 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* 원하는 줄 수 */
+
 }
 
 .fifth-container{
