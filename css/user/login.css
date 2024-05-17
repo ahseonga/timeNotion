@@ -37,12 +37,16 @@ header {
   /* background-color: grey; */
 }
 
+.textId{
+  margin-bottom: 20px;
+}
 /* 아이디 비밀번호 입력칸 */
 .textId > input{
   margin-top: 10px;
   margin-bottom: 30px;
   background-color: rgb(242, 242, 246);
-  border: none;
+  /* border: none; */
+  border: 1px solid gray;
   border-radius: 5px;
   width: 350px;
   height: 50px;
@@ -58,7 +62,8 @@ header {
   margin-top: 6px;
   margin-bottom: 13px;
   background-color: rgb(242, 242, 246);
-  border: none;
+  /* border: none; */
+  border: 1px solid gray;
   border-radius: 5px;
   width: 350px;
   height: 50px;
