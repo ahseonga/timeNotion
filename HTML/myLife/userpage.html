@@ -9,59 +9,59 @@
   <link rel="stylesheet" href="./../../css/reset.css">
   <link rel="stylesheet" href="./../../css/fragment/header.css">
   <link rel="stylesheet" href="./../../css/fragment/footer.css">
+  <script defer src="./../../js/myLife/userpage.js"></script>
 </head>
 
 <body>
-    <!-- 헤더~~!!!!!!!!!!!!!!!!!!! -->
-    <header>
-     <div class="header-wrapper">
-       <div class="header-left">
-         <div class="logo-box">
-           <a href="./../main/main.html"
-             ><img src="./../../img/main/timenotion.png" alt="로고 사진 넣어주세요"
-           /></a>
-         </div>
-         <div class="category-box">
-           <ul>
-             <li><a href="#">about</a></li>
-             <li><a href="./../myLife/mypage.html">나의 일대기</a></li>
-             <li><a href="./../yourLife/yourLife.html">너의 일대기</a></li>
-             <li><a href="./../everyLife/everyLife.html">모두의 일대기</a></li>
-             <li><a href="./../community/inquiry.html">커뮤니티</a></li>
-           </ul>
-         </div>
-       </div>
-       <div class="header-right">
-         <!-- 로그인 전 ----------- -->
-         <div class="login-box">
-           <a href="./../user/login.html" class="login-wrap">
-             <div class="header-img-box"><img src="./../../img/main/로그인.png" alt="" /></div>
-             <span>로그인</span>
-           </a>
-         </div>
-         <div class="regist-box">
-           <a href="./../user/join.html" class="regist-wrap">
-             <div class="header-img-box"><img src="./../../img/main/회원가입.png" alt="" /></div>
-             <span>회원가입</span>
-           </a>
-         </div>
-         <!-- 로그인 후 ------------ .logout-box : display : none -->
-         <div class="logout-box">
-           <a href="#" class="logout-wrap">
-             <div class="logout-img-box"><img src="./../../img/main/로그아웃.png" alt="" /></div>
-             <span>로그아웃</span>
-           </a>
-         </div>
-       </div>
-     </div>
-   </header>
-   <!-- 헤더 끝-========================================================================== -->
- 
+  <!-- 헤더~~!!!!!!!!!!!!!!!!!!! -->
+  <header>
+    <div class="header-wrapper">
+      <div class="header-left">
+        <div class="logo-box">
+          <a href="./../main/main.html"><img src="./../../img/main/timenotion.png" alt="로고 사진 넣어주세요" /></a>
+        </div>
+        <div class="category-box">
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="./../myLife/mypage.html">나의 일대기</a></li>
+            <li><a href="./../yourLife/yourLife.html">너의 일대기</a></li>
+            <li><a href="./../everyLife/everyLife.html">모두의 일대기</a></li>
+            <li><a href="./../community/inquiry.html">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right">
+        <!-- 로그인 전 ----------- -->
+        <div class="login-box">
+          <a href="./../user/login.html" class="login-wrap">
+            <div class="header-img-box"><img src="./../../img/main/로그인.png" alt="" /></div>
+            <span>로그인</span>
+          </a>
+        </div>
+        <div class="regist-box">
+          <a href="./../user/join.html" class="regist-wrap">
+            <div class="header-img-box"><img src="./../../img/main/회원가입.png" alt="" /></div>
+            <span>회원가입</span>
+          </a>
+        </div>
+        <!-- 로그인 후 ------------ .logout-box : display : none -->
+        <div class="logout-box">
+          <a href="#" class="logout-wrap">
+            <div class="logout-img-box"><img src="./../../img/main/로그아웃.png" alt="" /></div>
+            <span>로그아웃</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 헤더 끝-========================================================================== -->
+
   <main>
-    <div class="first-container">   
+    <div class="first-container">
       <div class="profile-background">
         <div class="profile-background-dark"></div>
-        <div class="profile-bg-img-box"><img class="" src="./../../img/myLife/jyg-kids_20240514_104048343.jpg" alt=""></div>
+        <div class="profile-bg-img-box"><img class="" src="./../../img/myLife/jyg-kids_20240514_104048343.jpg" alt="">
+        </div>
         <div class="profile">
           <div class="profile-img-box"><img src="./../../img/myLife/jyg-baby_20240514_104047744.jpg" alt=""></div>
           <div class="profile-detail">
@@ -74,18 +74,18 @@
               <span class="follower-number">128</span>
               <span class="follower">팔로잉</span>
             </p>
-            <p class="profile-heart"><img src="./../../img/myLife/mdj-heart_negative.png" alt="하투"></p>
+            <p class="profile-heart"><img src="./../../img/myLife/mdj-heart_negative.png" alt="하투" class="detail_page_heart" id="heart-image"></p>
           </div>
         </div>
       </div>
       <div class="profile-text">
         <div class="profile-introduce">
           <p>여기 자기소개란 너비는 그대로 뒀습니다 일단?? 넓히니 너무 넓어서, 그리고 글자사이즈 줄였구요.<br>
-            프로필사진 영역 사진 구겨들어가게 되어있길래 수정했고 글자 안보여서 profile-img 위에 <mark>dark div</mark>넣어서 
+            프로필사진 영역 사진 구겨들어가게 되어있길래 수정했고 글자 안보여서 profile-img 위에 <mark>dark div</mark>넣어서
             배경이미지 자체를 좀 어두워져 보이게 만들었습니다.
           </p>
         </div>
-  <!--       <div class="write-button">
+        <!--       <div class="write-button">
           <button>글쓰기</button>
         </div> -->
       </div>
@@ -152,7 +152,7 @@
                   이거 제목 한줄 넘어가면 ellipsis 넣어서 ...나오게 해주셔야해요
                   모르겠으면 main페이지 참고해주세요 <br><br>
                   본문도 영역 넘어가면 overflow hidden이랑 ellipsis 들어가야해요
-                  지금은 그냥 넘어가요
+                  지금은 그냥 넘어가
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@
                   아늑한 분위기와 따뜻한 커피가 완벽한 조화를 이뤘다.
                   우리는 오랜만에 만나 서로의 최근 소식을 나누며 웃었다.
                   가끔은 이런 여유로운 시간이 필요하다고 느꼈다. 집에 돌아오
-                  
+
                 </p>
               </div>
             </div>
@@ -302,31 +302,32 @@
       </div>
     </div>
     <div class="fifth-container">
-      
-        <ul class="pagination">
-          <li>
-            <a href=""><</a>
-          </li>
-          <li>
-            <a href="">1</a>
-          </li>
-          <li>
-            <a href="">2</a>
-          </li>
-          <li>
-            <a href="">3</a>
-          </li>
-          <li>
-            <a href="">4</a>
-          </li>
-          <li>
-            <a href="">5</a>
-          </li>
-          <li>
-            <a href="">></a>
-          </li>
-        </ul>
-      
+
+      <ul class="pagination">
+        <li>
+          <a href="">
+            << /a>
+        </li>
+        <li>
+          <a href="">1</a>
+        </li>
+        <li>
+          <a href="">2</a>
+        </li>
+        <li>
+          <a href="">3</a>
+        </li>
+        <li>
+          <a href="">4</a>
+        </li>
+        <li>
+          <a href="">5</a>
+        </li>
+        <li>
+          <a href="">></a>
+        </li>
+      </ul>
+
     </div>
   </main>
   <footer>
@@ -361,9 +362,15 @@
           <div class="ft-call-time">운영시간 : 월~금 09:00 ~ 18:00, 주말 휴무</div>
           <div class="title-sns">Company SNS</div>
           <div class="box-sns">
-            <a href="#"><div class="sns"><span>instagram</span></div></a>
-            <a href="#"><div class="sns"><span>facebook</span></div></a>
-            <a href="#"><div class="sns"><span>kakao</span></div></a>
+            <a href="#">
+              <div class="sns"><span>instagram</span></div>
+            </a>
+            <a href="#">
+              <div class="sns"><span>facebook</span></div>
+            </a>
+            <a href="#">
+              <div class="sns"><span>kakao</span></div>
+            </a>
           </div>
         </div>
         <!-- 오른쪽 -->

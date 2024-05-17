@@ -1,17 +1,16 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-main{
+main {
   width: 920px;
-    background-color: #fcfaf7;
+  background-color: #fcfaf7;
   margin: 0 auto;
   padding: 40px 40px 0 40px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -26,17 +25,18 @@ a{
 }
 
 header {
-  text-align: center; 
+  text-align: center;
   height: 100%;
   width: 100%;
   background-color: #e5f2f7;
 }
 
-.profile-background{
+.profile-background {
   position: relative;
 }
+
 /* 수정1 : 검은거 한 겹 추가 */
-.profile-background-dark{
+.profile-background-dark {
   background-color: #12121230;
   width: 100%;
   height: 100%;
@@ -45,49 +45,53 @@ header {
   top: 0px;
 }
 
-.profile-bg-img-box{
+.profile-bg-img-box {
   width: 100%;
   height: 167px;
   border-radius: 6px 6px 0 0;
 }
 
-.profile-bg-img-box > img{
+.profile-bg-img-box>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 6px 6px 0 0;
 
 }
+
 /* 수정4 : 프로필 동그라미 */
-.profile{
+.profile {
   position: absolute;
   top: 90px;
   /* width: 100px; */
   display: flex;
   align-items: center;
-  margin-left: 25px;  
+  margin-left: 25px;
 }
-.profile-img-box{
+
+.profile-img-box {
   width: 100px;
   height: 100px;
   overflow: hidden;
 }
-.profile-img-box > img {
-  width: 100%; height: 100%;
+
+.profile-img-box>img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 30px;
 }
 
 
-.profile-detail{
+.profile-detail {
   display: flex;
   align-items: center;
   height: 36px;
   margin-left: 34px;
 }
 
-.profile-detail  > p{
+.profile-detail>p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,30 +101,35 @@ header {
   color: white;
   height: 100%;
 }
+
+
 /* 수정2 : 프로필 닉네임 */
-#profile-nickname{
+#profile-nickname {
   font-weight: 700;
   text-shadow: 1px 2px 5px#14141430;
 }
-.follower-number{
+
+.follower-number {
   font-weight: 700;
   text-shadow: 1px 2px 5px#14141430;
 }
-.profile-heart img{
+
+.profile-heart img {
   width: 20px;
   height: 20px;
   margin-top: 10px;
 }
-.follower{
+
+.follower {
   font-size: 12px;
   text-shadow: 1px 2px 5px#14141430;
 }
 
-.follower-number{
+.follower-number {
   font-size: 18px;
 }
 
-.profile-text{
+.profile-text {
   display: flex;
   justify-content: space-between;
   align-items: top;
@@ -128,19 +137,35 @@ header {
   margin-top: 10px;
 }
 
-.profile-introduce{
+.profile-introduce {
   width: 500px;
   /* margin-top: ; */
   margin-left: 40px;
 }
 
-.profile-introduce > p{
+.profile-introduce p {
   margin: 0;
-  line-height: 1.7;
+
   font-size: 12px;
+  font-size: 16px;
+  /* font-weight: bold; */
+
+  width: 600px;
+  /* 원하는 너비로 설정 */
+  height: 64px;
+  /* 두 줄 높이에 맞춰 설정 */
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 원하는 줄 수 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 32px;
+  /* 한 줄 높이 설정 */
 }
 
-.write-button button{
+.write-button button {
   width: 90px;
   height: 35px;
   color: white;
@@ -151,19 +176,20 @@ header {
   cursor: pointer;
 }
 
-.write-button > button:hover{
+.write-button>button:hover {
   background-color: #D9E9F8;
-  color:#4c6791; ;
+  color: #4c6791;
+  ;
   cursor: pointer;
 }
 
-.second-container{
+.second-container {
   display: flex;
   margin-top: 50px;
   margin-bottom: 20px;
 }
 
-.second-container-comment{
+.second-container-comment {
   background-color: #e5f2f7;
   height: 30px;
   width: 120px;
@@ -176,12 +202,12 @@ header {
 
 
 
-.second-container-comment:hover{
+.second-container-comment:hover {
   cursor: pointer;
   background-color: #D4E6EC;
 }
 
-.second-container-like{
+.second-container-like {
   background-color: #e5f2f7;
   height: 30px;
   width: 100px;
@@ -193,22 +219,22 @@ header {
 }
 
 /* 여기도 수정 */
-.second-container-comment > a,
-.second-container-like > a, 
-.second-container-user > a,
-.second-container-alarm > a{
+.second-container-comment>a,
+.second-container-like>a,
+.second-container-user>a,
+.second-container-alarm>a {
   font-weight: 700;
   font-size: 12px;
   color: rgb(6, 14, 49);
-  
+
 }
 
-.second-container-like:hover{
+.second-container-like:hover {
   cursor: pointer;
   background-color: #D4E6EC;
 }
 
-.second-container-user{
+.second-container-user {
   background-color: #e5f2f7;
   height: 30px;
   width: 120px;
@@ -221,12 +247,12 @@ header {
 
 
 
-.second-container-user:hover{
+.second-container-user:hover {
   cursor: pointer;
   background-color: #D4E6EC;
 }
 
-.second-container-alarm{
+.second-container-alarm {
   background-color: #e5f2f7;
   height: 30px;
   width: 80px;
@@ -238,25 +264,25 @@ header {
 }
 
 
-.second-container-alarm:hover{
+.second-container-alarm:hover {
   cursor: pointer;
   background-color: #D4E6EC;
 }
 
-hr{
+hr {
   opacity: 0.3
 }
 
-.third-container{
+.third-container {
   margin-top: 20px;
 }
 
-.third-container-category{
+.third-container-category {
   display: flex;
-  
+
 }
 
-.infancy{
+.infancy {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -267,21 +293,21 @@ hr{
   margin-right: 6px;
 }
 
-.infancy > a{
+.infancy>a {
   color: black;
   font-size: 12px;
 }
 
-.infancy:hover{
+.infancy:hover {
   background-color: #AAB286;
 }
 
-.infancy > a:hover{ 
+.infancy>a:hover {
   color: #E7E9DC;
 }
 
 
-.babyhood{
+.babyhood {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -292,20 +318,20 @@ hr{
   margin-right: 6px;
 }
 
-.babyhood > a{
+.babyhood>a {
   color: black;
   font-size: 12px;
 }
 
-.babyhood:hover{
+.babyhood:hover {
   background-color: #AAB286;
 }
 
-.babyhood > a:hover{ 
+.babyhood>a:hover {
   color: #E7E9DC;
 }
 
-.childhood{
+.childhood {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -316,20 +342,20 @@ hr{
   margin-right: 6px;
 }
 
-.childhood > a{
+.childhood>a {
   color: black;
   font-size: 12px;
 }
 
-.childhood:hover{
+.childhood:hover {
   background-color: #AAB286;
 }
 
-.childhood > a:hover{ 
+.childhood>a:hover {
   color: #E7E9DC;
 }
 
-.adolescence{
+.adolescence {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -340,20 +366,20 @@ hr{
   margin-right: 6px;
 }
 
-.adolescence > a{
+.adolescence>a {
   color: black;
   font-size: 12px;
 }
 
-.adolescence:hover{
+.adolescence:hover {
   background-color: #AAB286;
 }
 
-.adolescence > a:hover{ 
+.adolescence>a:hover {
   color: #E7E9DC;
 }
 
-.adult{
+.adult {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -364,20 +390,20 @@ hr{
   margin-right: 6px;
 }
 
-.adult > a{
+.adult>a {
   color: black;
   font-size: 12px;
 }
 
-.adult:hover{
+.adult:hover {
   background-color: #AAB286;
 }
 
-.adult > a:hover{ 
+.adult>a:hover {
   color: #E7E9DC;
 }
 
-.middle-age{
+.middle-age {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -388,20 +414,20 @@ hr{
   margin-right: 6px;
 }
 
-.middle-age > a{
+.middle-age>a {
   color: black;
   font-size: 12px;
 }
 
-.middle-age:hover{
+.middle-age:hover {
   background-color: #AAB286;
 }
 
-.middle-age > a:hover{ 
+.middle-age>a:hover {
   color: #E7E9DC;
 }
 
-.old-age{
+.old-age {
   background-color: rgb(206, 200, 200);
   width: 80px;
   height: 30px;
@@ -412,32 +438,32 @@ hr{
   margin-right: 6px;
 }
 
-.old-age > a{
+.old-age>a {
   color: black;
   font-size: 12px;
 }
 
-.old-age:hover{
+.old-age:hover {
   background-color: #AAB286;
 }
 
-.old-age > a:hover{ 
+.old-age>a:hover {
   color: #E7E9DC;
 }
 
-.fourth-container{
+.fourth-container {
   margin-top: 60px;
-  
+
 }
 
-.list{
+.list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
 /* 수정5 */
-.list-one{
+.list-one {
   border-radius: 10px;
   background-color: #fcfaf7;
   width: 284px;
@@ -447,46 +473,69 @@ hr{
   margin-bottom: 38px;
 }
 
-.list-one > a{
+.list-one>a {
   color: black;
 }
 
-.list-one-detail{
+.list-one-detail {
   margin: 40px 24px 24px 24px;
-  
+
 }
 
-.list-one:hover{
+.list-one:hover {
   background-color: #F2F1F0;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: space-between;
 }
 
-.title > h3{
+.title>h3 {
   font-size: 17px;
   font-weight: bold;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 192px;
+  /* 원하는 너비로 설정 */
+
 }
 
-.title > p{
+.title>p {
   font-size: 11px;
   color: rgb(206, 211, 211);
+
+
 }
 
-.list-date{
+.list-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  width: 236px;
+  height: 140px;
+  /* 원하는 너비로 설정 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  /* 원하는 줄 수 */
+
+}
+
+.list-date {
   margin-top: 20px;
   font-size: 11px;
 }
 
-.list-text{
+.list-text {
   margin-top: 25px;
   line-height: 1.8;
   font-size: 13px;
 }
 
-.fifth-container{
+.fifth-container {
   margin-top: 105px;
   /* margin-bottom: 50px; */
   /* background-color: aqua; */
@@ -494,19 +543,19 @@ hr{
 
 }
 
-.pagination{
+.pagination {
   display: flex;
   /* background-color: black; */
   width: 200px;
   margin: 0 auto;
-  
+
 }
 
-.pagination > li{
+.pagination>li {
   padding-right: 14px;
   font-size: 20px;
-  
-  
+
+
 }
 
 footer {
@@ -514,7 +563,3 @@ footer {
   width: 100%;
   height: 335px;
 }
-
-
-
-
