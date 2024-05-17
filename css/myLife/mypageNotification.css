@@ -51,12 +51,40 @@
 .follower-number{
   font-size: 18px;
 }
+.profile-text p{
+  font-size: 16px;
+  /* font-weight: bold; */
 
-/* .profile-heart img{
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-} */
+  width: 600px; /* 원하는 너비로 설정 */
+  height: 64px; /* 두 줄 높이에 맞춰 설정 */
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 원하는 줄 수 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 32px; /* 한 줄 높이 설정 */
+}
+.profile-bg-img-box{
+  width: 100%;
+  height: 167px;
+  border-radius: 6px 6px 0 0;
+}
+.profile-bg-img-box > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+
+}
+.profile-background-dark{
+  background-color: #12121230;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  top: 0px;
+}
 .profile-text{
   display: flex;
   justify-content: space-between;

@@ -8,7 +8,8 @@ function rgb(r, g, b) {
 const findInput = document.getElementById('find-input');
 const findResult = document.getElementById('find-result');
 //저장 버튼 
-// const findButton = document.getElementsByClassName("find-button");
+const findButton = document.getElementsByClassName("find-button")[0];
+console.log(findButton);
 // 변수생성
 let findCount = 0 ;
 
@@ -70,7 +71,18 @@ function findInputKeydownFunction(){
 
 
 // for (let i = 0; i < editSaveButton.length; i++) {
-//   findButton[i].addEventListener('click',findButtonClickFunction);
+  findButton.addEventListener('click',findButtonClickFunction);
 // }
 
-
+function findButtonClickFunction(){
+ //비밀번호 
+ if(findInput.value === ''){
+  findResult.innerText = "필수 입력 항목입니다.";
+  findResult.style.color = rgb(255, 119, 119);
+  findResult.style.fontSize = "12px";
+  findInput.style.borderColor =  rgb(255, 119, 119);
+  findInput.style.borderWidth = "1px";
+  findInput.style.marginBottom = "5px";
+  // editNicknameParagraph.style.color =  rgb(255, 119, 119);
+}
+}

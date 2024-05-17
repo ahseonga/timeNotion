@@ -79,7 +79,8 @@ function editOriPasswordInputKeydownFunction(){
 
 
 
-//비밀번호
+
+//새 비밀번호
 
 const editPasswordInput = document.getElementById('edit-password-input');
 const editPasswordResult = document.getElementById('edit-password-result');
@@ -262,3 +263,55 @@ function editSaveButtonClickFunction(){
     editPasswordCheckInput.style.marginBottom = "5px";
     editPasswordCheckParagraph.style.color =  rgb(255, 119, 119);
   }};
+
+
+
+
+//새 비밀번호 변수 , 비밀번호 확인 변수 
+//   const editPasswordInput = document.getElementById('edit-password-input');
+// const editPasswordResult = document.getElementById('edit-password-result');
+// const editPasswordParagraph = document.getElementById('edit-password-paragraph');
+
+// const editPasswordCheckInput = document.getElementById('edit-password-check-input');
+// const editPasswordCheckResult = document.getElementById('edit-password-check-result');
+// const editPasswordCheckParagraph = document.getElementById('edit-password-check-paragraph');
+
+
+editPasswordInput.addEventListener('keyup', editPasswordInputKeyupFunction);
+editPasswordCheckInput.addEventListener('keyup', editPasswordCheckInputKeyupFunction);
+
+  function editPasswordInputKeyupFunction() {
+    editPasswordInput.style.outline = "none";
+    editPasswordInput.style.opacity = 0.7;
+    editPasswordInput.style.borderWidth = "3px";
+    editPasswordInput.style.borderColor = '#B2E8F7';
+    editPasswordResult.innerText = "";
+    editPasswordParagraph.style.color = 'black';
+    editCheckPasswordMatch();
+  }
+
+  function editPasswordCheckInputKeyupFunction() {
+    editPasswordCheckInput.style.outline = "none";
+    editPasswordCheckInput.style.opacity = 0.7;
+    editPasswordCheckInput.style.borderWidth = "3px";
+    editPasswordCheckInput.style.borderColor = '#B2E8F7';
+    editPasswordCheckResult.innerText = "";
+    editPasswordCheckParagraph.style.color = 'black';
+    editCheckPasswordMatch();
+  }
+
+//비밀번호 일치 확인
+function editCheckPasswordMatch() {
+  const password = editPasswordInput.value;
+  const confirmPassword = editPasswordCheckInput.value;
+
+  if (password === confirmPassword && password !== '' && confirmPassword !== '') {
+    editPasswordCheckResult.innerText = "비밀번호가 일치합니다.";
+    editPasswordCheckResult.style.color = '#9CE1F7';
+  } else if (password !== confirmPassword && password !== '' && confirmPassword !== '') {
+    editPasswordCheckResult.innerText = "비밀번호가 일치하지 않습니다.";
+    editPasswordCheckResult.style.color = 'rgb(255, 119, 119)';
+  } else {
+    editPasswordCheckResult.innerText = "";
+  }
+}
