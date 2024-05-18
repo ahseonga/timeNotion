@@ -1,3 +1,4 @@
+
 /* 프로필 css */
 .profile-background{
   position: relative;
@@ -38,6 +39,8 @@
   justify-content: space-between;
   padding-right: 15px;
   font-size: 25px;
+  font-weight: 700;
+  text-shadow: 1px 2px 5px #14141430;
   color: white;
   height: 100%;
 }
@@ -133,7 +136,7 @@
 
 .second-container-comment{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 120px;
   border-radius: 5px;
   margin-right: 6px;
@@ -143,8 +146,8 @@
 }
 
 .second-container-comment > a{
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   color: black;
 }
 .second-container-comment:hover{
@@ -153,7 +156,7 @@
 }
 .second-container-like{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 100px;
   border-radius: 5px;
   margin-right: 6px;
@@ -163,8 +166,8 @@
 }
 
 .second-container-like > a{
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   color: black;
   
 }
@@ -174,7 +177,7 @@
 }
 .second-container-user{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 120px;
   border-radius: 5px;
   margin-right: 6px;
@@ -184,8 +187,8 @@
 }
 
 .second-container-user > a{
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   color: black;
   
 }
@@ -195,7 +198,7 @@
 }
 .second-container-alarm{
   background-color: #e5f2f7;
-  height: 27px;
+  height: 30px;
   width: 80px;
   border-radius: 5px;
   margin-right: 6px;
@@ -205,8 +208,8 @@
 }
 
 .second-container-alarm > a{
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   color: black;
   
 }
@@ -247,8 +250,9 @@ hr{
   justify-content: space-between;
   height: 575px;
 } 
+
 .like-content-left-title a{
-  width: 187.55px; /* 원하는 너비로 설정 */
+  width: 185.55px; /* 원하는 너비로 설정 */
   height: 24px; /* 두 줄 높이에 맞춰 설정 */
 
   display: -webkit-box;
@@ -256,6 +260,7 @@ hr{
   -webkit-line-clamp: 1; /* 원하는 줄 수 */
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 6px;
   line-height: 32px; /* 한 줄 높이 설정 */
 }
 .like-content-left-nickname a{
@@ -312,7 +317,9 @@ hr{
 .like-contents-left > li:nth-of-type(10){
   border-radius: 0 0 6px 6px;
 }
-
+.like-content-right-list p{
+  margin-right: 10px;
+}
 
 /* 좋아요 오른쪽 박스 */
 .like-contents-right{
