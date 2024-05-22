@@ -414,7 +414,7 @@ hr{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 192px; /* 원하는 너비로 설정 */
+    width: 172px; /* 원하는 너비로 설정 */
 
 }
 
